@@ -2,8 +2,8 @@
 	<HMIWindow.RefIds>
 		<StringList Capacity="0" />
 	</HMIWindow.RefIds>
-	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="58394e4110d14311977a9c4392c5c600" Versions="5" NamePath="LeftMenu.Rectangle0" Width="199" Height="112" Left="0" Top="69" />
-	<HMIText Text="SynopticView" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="cbf364ce19db40cab01cf8867cedcd32" Versions="5" NamePath="LeftMenu.Text0" Width="156" Height="54" Left="20" Top="105">
+	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="58394e4110d14311977a9c4392c5c600" Versions="5" NamePath="LeftMenu.Rectangle0" Width="199" Height="112" Left="0" Top="119" />
+	<HMIText Text="SynopticView" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="cbf364ce19db40cab01cf8867cedcd32" Versions="5" NamePath="LeftMenu.Text0" Width="145" Height="31" Left="27" Top="159.5" RotateAngle="0">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="SynopticView" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
@@ -18,8 +18,11 @@
 		<HMIText.DevFontStyle>
 			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
 		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="Var.Service.ScreenName" />
+		</HMIText.Animations>
 	</HMIText>
-	<HMIRectangle ZIndex="3" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="6ee02d4de6fb4e67b4ef8c3c6a7cdc1d" Versions="5" NamePath="LeftMenu.Rectangle1" Width="199" Height="112" Left="0" Top="183">
+	<HMIRectangle ZIndex="3" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="6ee02d4de6fb4e67b4ef8c3c6a7cdc1d" Versions="5" NamePath="LeftMenu.Rectangle1" Width="199" Height="112" Left="0" Top="233">
 		<HMIRectangle.Animations>
 			<HMIFillAnimation ScanTime="300" Expression="Alarm.HasAlarm">
 				<HMIFillAnimation.ExpressionTable>
@@ -39,10 +42,10 @@
 			</HMIFillAnimation>
 		</HMIRectangle.Animations>
 		<HMIRectangle.Actions>
-			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xD;&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
 		</HMIRectangle.Actions>
 	</HMIRectangle>
-	<HMIText Text="Alarm" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c960f675e55045b099d67eba1dd4623f" Versions="5" NamePath="LeftMenu.Text2" Width="156" Height="54" Left="29" Top="219">
+	<HMIText Text="Alarm" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c960f675e55045b099d67eba1dd4623f" Versions="5" NamePath="LeftMenu.Text2" Width="69" Height="30" Left="65" Top="274">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="Alarm" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
@@ -50,7 +53,62 @@
 			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
 		</HMIText.DevFontStyle>
 		<HMIText.Actions>
-			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xD;&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
 		</HMIText.Actions>
+	</HMIText>
+	<HMIRectangle ZIndex="5" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="6dde7aa2795640f386d15cd17fe34083" Versions="5" NamePath="LeftMenu.Rectangle2" Width="199" Height="112" Left="1" Top="959">
+		<HMIRectangle.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Sys.CurrentUserName = &quot;&quot;" />
+		</HMIRectangle.Animations>
+		<HMIRectangle.Actions>
+			<HMIEvent Script="UserCmd.LoginBox()" EventName="MouseLeftButtonDown" Expression="UserCmd.LoginBox()" />
+		</HMIRectangle.Actions>
+	</HMIRectangle>
+	<HMIText Text="Login" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="6" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="7190e04e89d34c6cacc66d29a450d426" Versions="5" NamePath="LeftMenu.Text3" Width="60" Height="32" Left="70.5" Top="999">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Login" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Sys.CurrentUserName = &quot;&quot;" />
+		</HMIText.Animations>
+		<HMIText.Actions>
+			<HMIEvent Script="UserCmd.LoginBox()" EventName="MouseLeftButtonDown" Expression="UserCmd.LoginBox()" />
+		</HMIText.Actions>
+	</HMIText>
+	<HMIRectangle ZIndex="7" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="89f8713ed0ee48a7b6f6489cf7bf8c18" Versions="5" NamePath="LeftMenu.Rectangle3" Width="199" Height="112" Left="1" Top="828">
+		<HMIRectangle.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Sys.CurrentUserName &lt;&gt; &quot;&quot;" />
+		</HMIRectangle.Animations>
+		<HMIRectangle.Actions>
+			<HMIEvent Script="UserCmd.Logout()" EventName="MouseLeftButtonDown" Expression="UserCmd.Logout()" />
+		</HMIRectangle.Actions>
+	</HMIRectangle>
+	<HMIText Text="Logout" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="8" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c3c6dd5dad8a405385906e844a3addbb" Versions="5" NamePath="LeftMenu.Text4" Width="81" Height="34" Left="60" Top="867">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Logout" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Sys.CurrentUserName &lt;&gt; &quot;&quot;" />
+		</HMIText.Animations>
+		<HMIText.Actions>
+			<HMIEvent Script="UserCmd.Logout()" EventName="MouseLeftButtonDown" Expression="UserCmd.Logout()" />
+		</HMIText.Actions>
+	</HMIText>
+	<HMIText Text="USER : ####" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="9" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="eeb235a3889a4a09a59ef474551c2deb" Versions="5" NamePath="LeftMenu.Text5" Width="156" Height="54" Left="0" Top="68">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="USER : ####" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="&quot;User: &quot; + Sys.CurrentUserName" />
+		</HMIText.Animations>
 	</HMIText>
 </HMIWindow>

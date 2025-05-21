@@ -1,7 +1,10 @@
-﻿<HMIWindow WindowType="Default" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFD8D8D8" Id="d5c8fd96184a413ca131457c55246f87" NamePath="AlarmWindow" Fill="{x:Null}" Width="1920" Height="1080" Left="0" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<HMIWindow WindowType="Default" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFD8D8D8" Id="d5c8fd96184a413ca131457c55246f87" NamePath="AlarmWindow" Fill="{x:Null}" Width="1720" Height="1080" Left="200" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<HMIWindow.RefIds>
 		<StringList Capacity="0" />
 	</HMIWindow.RefIds>
+	<HMIWindow.ChildScript>
+		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="Var.Service.ScreenName = &quot;Alarm&quot;" InteverTime="1000" Description="" IsEnabled="True" />
+	</HMIWindow.ChildScript>
 	<HMIAdvancedAlarmWindow ControlBorderBrush="#FFDCDCDC" StartTab="Realtime" FontFamily="Microsoft YaHei UI" FontSize="12" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" RelFontFamily="Microsoft YaHei UI" RelFontSize="12" RelFontWeight="Normal" RelFontStyle="Normal" RelFontStretch="Normal" IsBackgroundImage="False" BackgroundImage="" Background="#FFBFBFBF" ZIndex="0" Id="48a7833629ee4516a0e13bdad28a376c" Versions="5" NamePath="AlarmWindow.AlarmWindow0" Fill="{x:Null}" Width="1260" Height="795" Left="50" Top="64" ExtendedKeyValues="&lt;GroupAlarmConfigs Value=&quot;&quot;&gt;&lt;/GroupAlarmConfigs&gt;">
 		<HMIAdvancedAlarmWindow.HistoryDataGridStyle>
 			<HMIDataGridStyle HeadFontColor="#FF000000" HoverRowFontColor="#FFFFFFFF" HoverRowBackgroundColor="#FF87CEEB" SelectedRowFontColor="#FFFFFFFF" SelectedRowBackgroundColor="#FF87CEFA" GridBorderColor="#FFDCDCDC" GridBorderThickness="1" GridInnerBorderColor="#FFDCDCDC" GridInnerBordertThickness="1" IsShowVerticalLine="True" IsShowHorizontalLine="True">
