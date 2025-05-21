@@ -1,0 +1,67 @@
+﻿{
+  "Config": {
+    "IsEnableHistory": true,
+    "ProviderName": "System.Data.SQLite",
+    "ConnectionString": "Data Source=HistoryDB.db",
+    "ConnectionTimeout": 10,
+    "MasterDbName": "HistoryDB",
+    "StorageTime": 30,
+    "EnableArchive": true,
+    "EnableAutoArchive": false,
+    "ArchivePath": "C:\\Users\\pchoi\\OneDrive\\Dokumenty\\Studia\\PS04\\Interfejsy czlowiek maszyna\\Projekt1SCADA\\HDAFiles",
+    "RemainingSpaceWarning": 0
+  },
+  "Rules": {
+    "CycleRules": [
+      {
+        "Name": "s1",
+        "TimeBase": 1,
+        "TimeFactor": 1,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers every second"
+      },
+      {
+        "Name": "s10",
+        "TimeBase": 1,
+        "TimeFactor": 10,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers every 10 seconds"
+      },
+      {
+        "Name": "s30",
+        "TimeBase": 1,
+        "TimeFactor": 30,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers every 30 seconds"
+      },
+      {
+        "Name": "m1",
+        "TimeBase": 2,
+        "TimeFactor": 1,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers once per minute"
+      },
+      {
+        "Name": "m30",
+        "TimeBase": 2,
+        "TimeFactor": 30,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers every 30 minutes"
+      },
+      {
+        "Name": "h1",
+        "TimeBase": 3,
+        "TimeFactor": 1,
+        "IsEnableAbsoluteTime": true,
+        "AbsoluteTime": "0001-01-01 00:00:00.000",
+        "Description": "Triggers once per hour"
+      }
+    ]
+  },
+  "Records": {}
+}

@@ -1,0 +1,56 @@
+﻿<HMIWindow WindowType="Default" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFBFBFBF" Id="e3f79d04ddaa46278a162ac5a0df7be0" NamePath="LeftMenu" Fill="{x:Null}" Width="200" Height="1080" Left="0" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<HMIWindow.RefIds>
+		<StringList Capacity="0" />
+	</HMIWindow.RefIds>
+	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="58394e4110d14311977a9c4392c5c600" Versions="5" NamePath="LeftMenu.Rectangle0" Width="199" Height="112" Left="0" Top="69" />
+	<HMIText Text="SynopticView" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="cbf364ce19db40cab01cf8867cedcd32" Versions="5" NamePath="LeftMenu.Text0" Width="156" Height="54" Left="20" Top="105">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="SynopticView" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+	</HMIText>
+	<HMIText Text="Screen Name" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="2" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="57c6295f771346b098f9e25d61c68c32" Versions="5" NamePath="LeftMenu.Text1" Width="156" Height="54" Left="24" Top="13">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Screen Name" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+	</HMIText>
+	<HMIRectangle ZIndex="3" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="6ee02d4de6fb4e67b4ef8c3c6a7cdc1d" Versions="5" NamePath="LeftMenu.Rectangle1" Width="199" Height="112" Left="0" Top="183">
+		<HMIRectangle.Animations>
+			<HMIFillAnimation ScanTime="300" Expression="Alarm.HasAlarm">
+				<HMIFillAnimation.ExpressionTable>
+					<HMIDiscreteItemCollection>
+						<HMIDiscreteItem ExpressionValue="0" Operate="EqualTo">
+							<HMIDiscreteItem.Value>
+								<HMIImageBrush Path="" Value="#FFA5A5A5" />
+							</HMIDiscreteItem.Value>
+						</HMIDiscreteItem>
+						<HMIDiscreteItem ExpressionValue="1" Operate="EqualTo">
+							<HMIDiscreteItem.Value>
+								<HMIImageBrush Path="" Value="#FFFF0000" />
+							</HMIDiscreteItem.Value>
+						</HMIDiscreteItem>
+					</HMIDiscreteItemCollection>
+				</HMIFillAnimation.ExpressionTable>
+			</HMIFillAnimation>
+		</HMIRectangle.Animations>
+		<HMIRectangle.Actions>
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xD;&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
+		</HMIRectangle.Actions>
+	</HMIRectangle>
+	<HMIText Text="Alarm" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c960f675e55045b099d67eba1dd4623f" Versions="5" NamePath="LeftMenu.Text2" Width="156" Height="54" Left="29" Top="219">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Alarm" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Actions>
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)&#xD;&#xA;HMICmd.CloseWindow(&quot;Main&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;AlarmWindow&quot;)" />
+		</HMIText.Actions>
+	</HMIText>
+</HMIWindow>

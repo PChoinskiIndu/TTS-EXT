@@ -1,0 +1,5 @@
+﻿<HMIFaceplateTemplate Left="0" Top="0" ZIndex="0" Background="#FFFFFFFF" Id="b9eabe77a9a3448e8199634e7c511ae0" Versions="5" NamePath="Panel0" Fill="{x:Null}" Width="1920" Height="1080" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<HMIFaceplateTemplate.Property>
+		<HMIProperty Creator="pchoi" CreationTime="2025-05-10T12:08:00.9330569+02:00" Modifier="pchoi" ModificationTime="2025-05-10T12:08:00.9330569+02:00" Version="0.1" Description="" />
+	</HMIFaceplateTemplate.Property>
+</HMIFaceplateTemplate>

@@ -1,0 +1,81 @@
+﻿<HMIWindow WindowType="Default" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFD8D8D8" Id="d5c8fd96184a413ca131457c55246f87" NamePath="AlarmWindow" Fill="{x:Null}" Width="1920" Height="1080" Left="0" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<HMIWindow.RefIds>
+		<StringList Capacity="0" />
+	</HMIWindow.RefIds>
+	<HMIAdvancedAlarmWindow ControlBorderBrush="#FFDCDCDC" StartTab="Realtime" FontFamily="Microsoft YaHei UI" FontSize="12" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" RelFontFamily="Microsoft YaHei UI" RelFontSize="12" RelFontWeight="Normal" RelFontStyle="Normal" RelFontStretch="Normal" IsBackgroundImage="False" BackgroundImage="" Background="#FFBFBFBF" ZIndex="0" Id="48a7833629ee4516a0e13bdad28a376c" Versions="5" NamePath="AlarmWindow.AlarmWindow0" Fill="{x:Null}" Width="1260" Height="795" Left="50" Top="64" ExtendedKeyValues="&lt;GroupAlarmConfigs Value=&quot;&quot;&gt;&lt;/GroupAlarmConfigs&gt;">
+		<HMIAdvancedAlarmWindow.HistoryDataGridStyle>
+			<HMIDataGridStyle HeadFontColor="#FF000000" HoverRowFontColor="#FFFFFFFF" HoverRowBackgroundColor="#FF87CEEB" SelectedRowFontColor="#FFFFFFFF" SelectedRowBackgroundColor="#FF87CEFA" GridBorderColor="#FFDCDCDC" GridBorderThickness="1" GridInnerBorderColor="#FFDCDCDC" GridInnerBordertThickness="1" IsShowVerticalLine="True" IsShowHorizontalLine="True">
+				<HMIDataGridStyle.HeadFontStyle>
+					<HMIFont IsBold="False" IsItalic="False" IsUnderLine="False" TextFontFamily="Microsoft YaHei UI" TextFontSize="12" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIDataGridStyle.HeadFontStyle>
+				<HMIDataGridStyle.ContentFontStyle>
+					<HMIFont IsBold="False" IsItalic="False" IsUnderLine="False" TextFontFamily="Microsoft YaHei UI" TextFontSize="12" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIDataGridStyle.ContentFontStyle>
+			</HMIDataGridStyle>
+		</HMIAdvancedAlarmWindow.HistoryDataGridStyle>
+		<HMIAdvancedAlarmWindow.RTDataGridStyle>
+			<HMIDataGridStyle HeadFontColor="#FF000000" HoverRowFontColor="#FFFFFFFF" HoverRowBackgroundColor="#FF87CEEB" SelectedRowFontColor="#FFFFFFFF" SelectedRowBackgroundColor="#FF1E90FF" GridBorderColor="#FFDCDCDC" GridBorderThickness="1" GridInnerBorderColor="#FFDCDCDC" GridInnerBordertThickness="1" IsShowVerticalLine="True" IsShowHorizontalLine="True">
+				<HMIDataGridStyle.HeadFontStyle>
+					<HMIFont IsBold="False" IsItalic="False" IsUnderLine="False" TextFontFamily="Microsoft YaHei UI" TextFontSize="12" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIDataGridStyle.HeadFontStyle>
+				<HMIDataGridStyle.ContentFontStyle>
+					<HMIFont IsBold="False" IsItalic="False" IsUnderLine="False" TextFontFamily="Microsoft YaHei UI" TextFontSize="12" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIDataGridStyle.ContentFontStyle>
+			</HMIDataGridStyle>
+		</HMIAdvancedAlarmWindow.RTDataGridStyle>
+		<HMIAdvancedAlarmWindow.ColumnVisiable>
+			<Column Source="Alarm" Name="100" IsShowAlarmName="True" VariablePath="100" IsShowVariblePath="True" TriggerTime="100" IsShowTriggerTime="True" AckTime="100" IsShowAckTime="True" RecoveryTime="100" IsShowRecoveryTime="True" RecoveryType="100" IsShowRecoveryType="True" AlarmType="100" IsShowAlarmType="True" AlarmLevel="100" IsShowAlarmLevel="True" AlarmText="100" IsShowAlarmText="True" AlarmValue="100" IsShowAlarmValue="True" LimitValue="100" IsShowLimitValue="True" RecoveryValue="100" IsShowRecoveryValue="True" AlarmSource="100" IsShowAlarmSource="True" AlarmDescription="100" IsShowAlarmDiscript="True" CurrentValue="100" IsShowCurrentValue="True" IsRelAlarm="False" AlarmNameVisibility="Visible" VariblePathVisibility="Visible" TriggerTimeVisibility="Visible" AckTimeVisibility="Visible" RecoveryTimeVisibility="Visible" RecoveryTypeVisibility="Visible" AlarmTypeVisibility="Visible" AlarmLevelVisibility="Visible" AlarmTextVisibility="Visible" AlarmValueVisibility="Visible" LimitValueVisibility="Visible" RecoveryValueVisibility="Visible" AlarmSourceVisibility="Visible" AlarmDiscriptVisibility="Visible" AlarmCurrentValueVisibility="Visible">
+				<Column.Details>
+					<ColumnItemCollection Capacity="16">
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmName" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="VariablePath" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="TriggerTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AckTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecoveryTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecordType" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmType" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmLevel" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmText" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="LimitValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecoveryValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmSource" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="Descript" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+					</ColumnItemCollection>
+				</Column.Details>
+			</Column>
+		</HMIAdvancedAlarmWindow.ColumnVisiable>
+		<HMIAdvancedAlarmWindow.RelColumnVisiable>
+			<Column Source="Alarm" Name="100" IsShowAlarmName="True" VariablePath="100" IsShowVariblePath="True" TriggerTime="100" IsShowTriggerTime="True" AckTime="100" IsShowAckTime="True" RecoveryTime="100" IsShowRecoveryTime="True" RecoveryType="100" IsShowRecoveryType="True" AlarmType="100" IsShowAlarmType="True" AlarmLevel="100" IsShowAlarmLevel="True" AlarmText="100" IsShowAlarmText="True" AlarmValue="100" IsShowAlarmValue="True" LimitValue="100" IsShowLimitValue="True" RecoveryValue="100" IsShowRecoveryValue="True" AlarmSource="100" IsShowAlarmSource="True" AlarmDescription="100" IsShowAlarmDiscript="True" CurrentValue="100" IsShowCurrentValue="True" IsRelAlarm="True" AlarmNameVisibility="Visible" VariblePathVisibility="Visible" TriggerTimeVisibility="Visible" AckTimeVisibility="Visible" RecoveryTimeVisibility="Visible" RecoveryTypeVisibility="Visible" AlarmTypeVisibility="Visible" AlarmLevelVisibility="Visible" AlarmTextVisibility="Visible" AlarmValueVisibility="Visible" LimitValueVisibility="Visible" RecoveryValueVisibility="Visible" AlarmSourceVisibility="Visible" AlarmDiscriptVisibility="Visible" AlarmCurrentValueVisibility="Visible">
+				<Column.Details>
+					<ColumnItemCollection Capacity="16">
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmName" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="VariablePath" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="TriggerTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AckTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecoveryTime" ColumnWidth="100" DataType="DateTime" DateFormat="System" TimeFormat="System" AlignMent="Left" IsShowDate="True" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecordType" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmType" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmLevel" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmText" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="LimitValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="CurrentValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="RecoveryValue" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="AlarmSource" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+						<ColumnItem IsShow="True" ColumnName="" ColumnKey="Descript" ColumnWidth="100" DataType="Unknow" DateFormat="{x:Null}" TimeFormat="{x:Null}" AlignMent="Left" IsShowDate="False" />
+					</ColumnItemCollection>
+				</Column.Details>
+			</Column>
+		</HMIAdvancedAlarmWindow.RelColumnVisiable>
+		<HMIAdvancedAlarmWindow.AlarmWindowCollection>
+			<AlarmWindowCollection />
+		</HMIAdvancedAlarmWindow.AlarmWindowCollection>
+		<HMIAdvancedAlarmWindow.HtAlarmFilter>
+			<Filter FilterName="DoubleLowAlarm,LowAlarm,OnAlarm,OffAlarm,OnOrOffAlarm,ExpressionAlarm,HighAlarm,DoubleHighAlarm,UpperDeviationAlarm,LowerDeviationAlarm,RateOfChangeAlarm,Light,Lighter,Common,Heavier,Serious,Ack,Recovery,Alarm" />
+		</HMIAdvancedAlarmWindow.HtAlarmFilter>
+		<HMIAdvancedAlarmWindow.RelAlarmFilter>
+			<Filter FilterName="DoubleLowAlarm,LowAlarm,OnAlarm,OffAlarm,OnOrOffAlarm,ExpressionAlarm,HighAlarm,DoubleHighAlarm,UpperDeviationAlarm,LowerDeviationAlarm,RateOfChangeAlarm,Light,Lighter,Common,Heavier,Serious,Ack,Recovery,Alarm" />
+		</HMIAdvancedAlarmWindow.RelAlarmFilter>
+	</HMIAdvancedAlarmWindow>
+</HMIWindow>

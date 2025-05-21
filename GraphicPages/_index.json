@@ -1,0 +1,39 @@
+{
+  "Root": {
+    "Id": "60ff08f6e38c49539f46689e6ad4fd9e",
+    "RelativePath": "GraphicPages",
+    "Name": "GraphicPages",
+    "Children": [
+      {
+        "Id": "02270eba7cbd44e78db979a8321ce001",
+        "RelativePath": "GraphicPages\\Main.xaml",
+        "Name": "Main",
+        "Children": []
+      },
+      {
+        "Id": "316a844aafa047c7a1a2f339c40b7b5d",
+        "RelativePath": "GraphicPages\\Chart.xaml",
+        "Name": "Chart",
+        "Children": []
+      },
+      {
+        "Id": "c79fd98cee2847f4a3aba364c5828a46",
+        "RelativePath": "GraphicPages\\ValveControl.xaml",
+        "Name": "ValveControl",
+        "Children": []
+      },
+      {
+        "Id": "e3f79d04ddaa46278a162ac5a0df7be0",
+        "RelativePath": "GraphicPages\\LeftMenu.xaml",
+        "Name": "LeftMenu",
+        "Children": []
+      },
+      {
+        "Id": "d5c8fd96184a413ca131457c55246f87",
+        "RelativePath": "GraphicPages\\AlarmWindow.xaml",
+        "Name": "AlarmWindow",
+        "Children": []
+      }
+    ]
+  }
+}

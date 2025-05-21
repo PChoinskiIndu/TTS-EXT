@@ -1,0 +1,21 @@
+{
+  "Root": {
+    "Id": "fbdb85ea69164726aa647a3e3aea13a5",
+    "RelativePath": "PanelTemplates",
+    "Name": "PanelTemplates",
+    "Children": [
+      {
+        "Id": "2e5e2bd0d9204d28a53fbdfc5e0120b7",
+        "RelativePath": "PanelTemplates\\Tank.pnl",
+        "Name": "Tank",
+        "Children": []
+      },
+      {
+        "Id": "b9eabe77a9a3448e8199634e7c511ae0",
+        "RelativePath": "PanelTemplates\\Panel0.pnl",
+        "Name": "Panel0",
+        "Children": []
+      }
+    ]
+  }
+}

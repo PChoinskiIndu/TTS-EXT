@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <protocols isConverted="false">
+    <log warnItem="false" readItem="false" sendByte="false" writeItem="false" receiveByte="false" />
+    <protocol name="OPCDA" type="OPCDA" brand="OPC" modelType="OPC">
+      <channel name="Channel0" type="OPCDA">
+        <device id="Device0" deivceType="OPCDADevice" deviceName="Device0" stationAddress="1" isInitialStart="true">
+          <timeParameter scanTime="500" replyTimeout="3000" retryTimes="3" reconnectDelay="30" reconnectTime="0" />
+          <deviceParam />
+        </device>
+        <conParam>
+          <para paraName="isHierarchial" paraValue="true" />
+          <para paraName="isSynchronized" paraValue="true" />
+          <para paraName="name" paraValue="Matrikon.OPC.Simulation.1" />
+          <para paraName="ip" paraValue="" />
+        </conParam>
+      </channel>
+    </protocol>
+  </protocols>
+</configuration>

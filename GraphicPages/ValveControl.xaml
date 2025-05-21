@@ -1,0 +1,22 @@
+﻿<HMIWindow WindowType="Layout" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFFFFFFF" Id="c79fd98cee2847f4a3aba364c5828a46" NamePath="ValveControl" Fill="{x:Null}" Width="400" Height="400" Left="0" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<HMIWindow.RefIds>
+		<StringList Capacity="0" />
+	</HMIWindow.RefIds>
+	<HMIWindow.ChildScript>
+		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="SELECT Case Var.Temp.ValveSelect&#xD;&#xA;&#x9;CASE 1&#xD;&#xA;&#x9;&#x9;Var.CVG1man = Var.Temp.ValveValue&#xD;&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;CV1 Set Value&quot;&#xD;&#xA;&#x9;CASE 2&#xD;&#xA;&#x9;&#x9;Var.CVG2man = Var.Temp.ValveValue&#xD;&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;CV2 Set Value&quot;&#xD;&#xA;&#x9;CASE 3&#xD;&#xA;&#x9;&#x9;Var.CVG1man = Var.Temp.ValveValue&#xD;&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;CV3 Set Value&quot;&#xD;&#xA;END Select" InteverTime="1000" Description="" IsEnabled="True" />
+	</HMIWindow.ChildScript>
+	<HMICircleGauge IsShowToolBar="False" IsShowBtnStop="True" IsShowBtnSave="True" IsShowBtnPrint="True" CircleVarExpValue="Var.Temp.ValveValue" PointerValue="70" UnitText="%" Text="" FontFamily="Times New Roman" FontSize="20" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Foreground="#FF000000" ZIndex="0" Id="c7c5a4f9adce40cf96663087f6f7a6c0" Versions="5" NamePath="ValveControl.CircleGauge0" Fill="{x:Null}" Width="361" Height="285" Left="15" Top="58">
+		<HMICircleGauge.Scale>
+			<HMICircularGaugeScale UnitTexts="%" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold" FontStyle="Normal" FontStretch="Normal" Labelstroke="#FF000000" RimStroke="#FFDBDBDB" RimStrokeWidth="20" TickStroke="#FF000000" ScaleInterval="10" SmallTickStroke="#FFC0C0C0" ScaleMinorTicksPerInterval="10" ScaleEndValue="100" ScaleStartValue="0" StartAngle="160" SweepAngle="220" ValuePosition="Outside" PointPointerPosition="Outside" />
+		</HMICircleGauge.Scale>
+		<HMICircleGauge.Pointer>
+			<HMICircularGaugePointer PterStyle="NeedlePointer" PointerValues="70" SymbolPointerStyle="Diamond" PointerColor="#FF000000" PointerLength="0.5" PointerWidth="3" PointerCircleColor="#FF000000" PointerCircleSize="20" />
+		</HMICircleGauge.Pointer>
+		<HMICircleGauge.DevTextInfo>
+			<HMITextInfo Text="" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMICircleGauge.DevTextInfo>
+		<HMICircleGauge.DevFontStyle>
+			<HMIFont TextFontFamily="Times New Roman" TextFontSize="20" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+		</HMICircleGauge.DevFontStyle>
+	</HMICircleGauge>
+</HMIWindow>

@@ -1,0 +1,54 @@
+﻿<HMIWindow WindowType="Layout" Versions="5" Title="{x:Null}" ZIndex="0" Script="" Background="#FFD8D8D8" Id="316a844aafa047c7a1a2f339c40b7b5d" NamePath="Chart" Fill="{x:Null}" Width="600" Height="600" Left="0" Top="0" TransformOrigin="0,0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<HMIWindow.RefIds>
+		<StringList Capacity="0" />
+	</HMIWindow.RefIds>
+	<HMIWindow.ChildScript>
+		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="SELECT Case Var.Temp.WaterSelect &#xA;&#x9;CASE 1&#xA;&#x9;&#x9;Var.Temp.WaterLevel = Var.L11&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;Water Level L11&quot;&#xA;&#x9;CASE 2&#xA;&#x9;&#x9;Var.Temp.WaterLevel = Var.L21&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;Water Level L21&quot;&#xA;&#x9;CASE 3&#xA;&#x9;&#x9;Var.Temp.WaterLevel = Var.L31&#xA;&#x9;&#x9;Var.Temp.WaterName = &quot;Water Level L31&quot;&#xA;END Select" InteverTime="100" Description="" IsEnabled="True" />
+	</HMIWindow.ChildScript>
+	<HMIRtLineChart RefreshTime="00:00:01" TimeRange="00:10:00" DataLoadStartTime="00:00:01" FontFamily="Times New Roman" FontSize="20" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Foreground="#FF000000" Header="Water Level " IsShowLegendCheckBox="False" PointerLineColor="#FFFF0000" HeaderStatusBarForeground="#FF000000" Stroke="#FF808080" StrokeThickness="0.3" StrokeDashCap="Flat" StrokeDashArray="0.5 2" MaStroke="#FF808080" MaStrokeThickness="0.3" MaStrokeDashCap="Flat" MaStrokeDashArray="1 0" MaxLineVarExp="{x:Null}" MinLineVarExp="{x:Null}" MaxLineColor="#FFFF0000" MaxMinLineColor="#FF008000" ZIndex="0" Id="60194cb997d74c368322e3603ec77f5c" Versions="5" NamePath="Chart.RealtimeChart0" Fill="{x:Null}" Width="599" Height="468" Left="1" Top="85" ExtendedKeyValues="&lt;PointlineFontFamily Value=&quot;Times New Roman&quot;&gt;&lt;/PointlineFontFamily&gt;&lt;PointlineFontSize Value=&quot;12&quot;&gt;&lt;/PointlineFontSize&gt;&lt;PointlineFontWeight Value=&quot;Normal&quot;&gt;&lt;/PointlineFontWeight&gt;&lt;PointlineFontStretch Value=&quot;Normal&quot;&gt;&lt;/PointlineFontStretch&gt;&lt;PointlineFontStyle Value=&quot;Normal&quot;&gt;&lt;/PointlineFontStyle&gt;&lt;IsShowStatusBar Value=&quot;False&quot;&gt;&lt;/IsShowStatusBar&gt;&lt;StatusBarNumberFormat Value=&quot;Integer&quot;&gt;&lt;/StatusBarNumberFormat&gt;&lt;StatusBarFontFamily Value=&quot;Times New Roman&quot;&gt;&lt;/StatusBarFontFamily&gt;&lt;StatusBarFontSize Value=&quot;12&quot;&gt;&lt;/StatusBarFontSize&gt;&lt;StatusBarFontWeight Value=&quot;Normal&quot;&gt;&lt;/StatusBarFontWeight&gt;&lt;StatusBarFontStyle Value=&quot;Normal&quot;&gt;&lt;/StatusBarFontStyle&gt;&lt;StatusBarFontStretch Value=&quot;Normal&quot;&gt;&lt;/StatusBarFontStretch&gt;&lt;IsGridLinesVisibility Value=&quot;False&quot;&gt;&lt;/IsGridLinesVisibility&gt;">
+		<HMIRtLineChart.DatetimeAxis>
+			<HMIRtLineChartDateAxis SmallTicksPerIntervalnterval="1" LabelFormat="HH:mm:ss" ScrollBarBackground="#FFB7B7B7" ScrollBarThumbBackground="#FF686868" FontFamily="Times New Roman" FontSize="14" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Foreground="#FF000000" Header="Time" LabelRotationAngle="0" ExtendedKeyValues="&lt;OpposedPosition Value=&quot;False&quot;&gt;&lt;/OpposedPosition&gt;">
+				<HMIRtLineChartDateAxis.DevTextInfo>
+					<HMITextInfo Text="Time" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+				</HMIRtLineChartDateAxis.DevTextInfo>
+				<HMIRtLineChartDateAxis.DevFontStyle>
+					<HMIFont TextFontFamily="Times New Roman" TextFontSize="14" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIRtLineChartDateAxis.DevFontStyle>
+			</HMIRtLineChartDateAxis>
+		</HMIRtLineChart.DatetimeAxis>
+		<HMIRtLineChart.NumericalAxis>
+			<HMIRtLineChartNumAxis Minimum="0" Maximum="1" Interval="0.1" SmallTicksPerInterval="1" LabelFormat="0.0" EnableScrollBarResizing="False" ScrollBarBackground="#FFB7B7B7" ScrollBarThumbBackground="#FF686868" FontFamily="Times New Roman" FontSize="14" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Foreground="#FF000000" Header="Water Level" LabelRotationAngle="0" ExtendedKeyValues="&lt;VarExpMin Value=&quot;&quot;&gt;&lt;/VarExpMin&gt;&lt;VarExpMax Value=&quot;&quot;&gt;&lt;/VarExpMax&gt;&lt;OpposedPosition Value=&quot;False&quot;&gt;&lt;/OpposedPosition&gt;">
+				<HMIRtLineChartNumAxis.DevTextInfo>
+					<HMITextInfo Text="Water Level" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+				</HMIRtLineChartNumAxis.DevTextInfo>
+				<HMIRtLineChartNumAxis.DevFontStyle>
+					<HMIFont TextFontFamily="Times New Roman" TextFontSize="14" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+				</HMIRtLineChartNumAxis.DevFontStyle>
+			</HMIRtLineChartNumAxis>
+		</HMIRtLineChart.NumericalAxis>
+		<HMIRtLineChart.SeriesCollection>
+			<HMIFastLineExpressionSeries DefaultValue="0" AdornmnetWidth="20" AdornmnetHeight="20" AdornmentInterior="#FF38C7A3" AdornmnetLabelContent="YValue" AdornmnetLabelFormat="Integer" AdornmnetType="None" AdornmentLabelFontFamily="Times New Roman" AdornmentLabelFontWeight="Normal" AdornmentLabelFontStyle="Normal" AdornmentLabelFontStretch="Normal" AdornmentLabelForeground="#FF000000" LabelPosition="Center" ChartSeriesType="FastLine" Name="WaterLevel" Stroke="{x:Null}" Interior="#FF38C7A3" StroknessThickness="2" IsVisible="True" SeriesMaxValue="100" SeriesMinValue="0" VarExp="Var.Temp.WaterLevel" ExtendedKeyValues="&lt;FixYAxis Value=&quot;False&quot;&gt;&lt;/FixYAxis&gt;&lt;AxisModel Value=&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;HMINumberAxisModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Minimum&gt;0&lt;/Minimum&gt;&#xD;&#xA;  &lt;Maximum&gt;100&lt;/Maximum&gt;&#xD;&#xA;  &lt;Interval&gt;10&lt;/Interval&gt;&#xD;&#xA;  &lt;SmallTicksPerInterval&gt;1&lt;/SmallTicksPerInterval&gt;&#xD;&#xA;  &lt;NumericalFormat&gt;None&lt;/NumericalFormat&gt;&#xD;&#xA;  &lt;IsVisible&gt;true&lt;/IsVisible&gt;&#xD;&#xA;  &lt;IsShowGridLines&gt;true&lt;/IsShowGridLines&gt;&#xD;&#xA;  &lt;EnableScrollBar&gt;false&lt;/EnableScrollBar&gt;&#xD;&#xA;  &lt;EnableTouchMode&gt;false&lt;/EnableTouchMode&gt;&#xD;&#xA;  &lt;ZoomPosition&gt;0&lt;/ZoomPosition&gt;&#xD;&#xA;  &lt;ZoomFactor&gt;1&lt;/ZoomFactor&gt;&#xD;&#xA;  &lt;CenterPosition&gt;false&lt;/CenterPosition&gt;&#xD;&#xA;  &lt;OpposedPosition&gt;false&lt;/OpposedPosition&gt;&#xD;&#xA;  &lt;Header /&gt;&#xD;&#xA;  &lt;LabelRotationAngle&gt;0&lt;/LabelRotationAngle&gt;&#xD;&#xA;  &lt;MaxMinExpression&gt;&#xD;&#xA;    &lt;MininumVariablePath /&gt;&#xD;&#xA;    &lt;MaxinumVariablePath /&gt;&#xD;&#xA;  &lt;/MaxMinExpression&gt;&#xD;&#xA;&lt;/HMINumberAxisModel&gt;&quot;&gt;&lt;/AxisModel&gt;">
+				<HMIFastLineExpressionSeries.FixAxisConfig>
+					<HMINumericalAxisExtend Foreground="#FF000000" Minimum="0" Maximum="100" Interval="10" SmallTicksPerInterval="1" RangePadding="Auto" IsShowGridLines="False" EnableScrollBarResizing="False" ScrollBarBackground="#FFB7B7B7" ScrollBarThumbBackground="#FF686868" FontFamily="Segoe UI" FontSize="16" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Header="" LabelRotationAngle="0" DevTextInfo="{x:Null}" DevFontStyle="{x:Null}" ExtendedKeyValues="&lt;VarExpMin Value=&quot;&quot;&gt;&lt;/VarExpMin&gt;&lt;VarExpMax Value=&quot;&quot;&gt;&lt;/VarExpMax&gt;&lt;OpposedPosition Value=&quot;False&quot;&gt;&lt;/OpposedPosition&gt;" />
+				</HMIFastLineExpressionSeries.FixAxisConfig>
+			</HMIFastLineExpressionSeries>
+		</HMIRtLineChart.SeriesCollection>
+		<HMIRtLineChart.DevTextInfo>
+			<HMITextInfo Text="Water Level " IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIRtLineChart.DevTextInfo>
+		<HMIRtLineChart.DevFontStyle>
+			<HMIFont TextFontFamily="Times New Roman" TextFontSize="20" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
+		</HMIRtLineChart.DevFontStyle>
+	</HMIRtLineChart>
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="cb5c7e03395e4cba9e667c37adbcdaad" Versions="5" NamePath="Chart.Text0" Width="271" Height="38" Left="160" Top="40">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="Var.Temp.WaterName" />
+		</HMIText.Animations>
+	</HMIText>
+</HMIWindow>
