@@ -33,6 +33,12 @@
         "RelativePath": "GraphicPages\\AlarmWindow.xaml",
         "Name": "AlarmWindow",
         "Children": []
+      },
+      {
+        "Id": "ff0f241931d94a7d9a36e344e0fb2282",
+        "RelativePath": "GraphicPages\\SynopticView.xaml",
+        "Name": "SynopticView",
+        "Children": []
       }
     ]
   }

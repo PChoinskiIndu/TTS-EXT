@@ -3,41 +3,46 @@
 		<StringList Capacity="0" />
 	</HMIWindow.RefIds>
 	<HMIWindow.ChildScript>
-		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="IF var.PIDMode Then&#xA;    Label0.Text = &quot;Auto&quot;&#xA;Else&#xA;&#x9;Label0.Text = &quot;Manual&quot;&#xA;END IF&#xA;&#xA;Var.Service.ScreenName = &quot;Main&quot;" InteverTime="100" Description="" IsEnabled="True" />
+		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="Var.Service.ScreenName = &quot;Main&quot;&#xA;IF var.PIDMode Then&#xA;    Label0.Text = &quot;Auto&quot;&#xA;Else&#xA;&#x9;Label0.Text = &quot;Manual&quot;&#xA;END IF" InteverTime="100" Description="" IsEnabled="True" />
 	</HMIWindow.ChildScript>
-	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="ada39263306c49d3ab79b565199cfaab" Versions="5" NamePath="Main.Rectangle7" Width="218" Height="335" Left="388" Top="336">
+	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="b3bfa519b5c94ac5b5c71b804107ad05" Versions="5" NamePath="Main.Rectangle13" Width="218" Height="335" Left="1052" Top="341">
+		<HMIRectangle.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.L31 &lt; 0.1" />
+		</HMIRectangle.Animations>
+	</HMIRectangle>
+	<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="ada39263306c49d3ab79b565199cfaab" Versions="5" NamePath="Main.Rectangle7" Width="218" Height="335" Left="388" Top="336">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L11 &gt; 0.7 AND Var.L11 &lt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="c9a7f13b9f124c94b3b551c173bd5482" Versions="5" NamePath="Main.Rectangle8" Width="218" Height="335" Left="388" Top="336">
+	<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="c9a7f13b9f124c94b3b551c173bd5482" Versions="5" NamePath="Main.Rectangle8" Width="218" Height="335" Left="388" Top="336">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L11 &gt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="9c4e4f67c4c64cdbb3e047135c424e09" Versions="5" NamePath="Main.Rectangle9" Width="218" Height="335" Left="736" Top="337">
+	<HMIRectangle ZIndex="3" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="9c4e4f67c4c64cdbb3e047135c424e09" Versions="5" NamePath="Main.Rectangle9" Width="218" Height="335" Left="736" Top="337">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L21 &gt; 0.7 AND Var.L21 &lt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="3" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="9d377c7766ac4aafb6d86fe5c2820192" Versions="5" NamePath="Main.Rectangle10" Width="218" Height="335" Left="736" Top="337">
+	<HMIRectangle ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="9d377c7766ac4aafb6d86fe5c2820192" Versions="5" NamePath="Main.Rectangle10" Width="218" Height="335" Left="736" Top="337">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L21 &gt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="b972d10a4df8491586bc414f55eaa3a1" Versions="5" NamePath="Main.Rectangle11" Width="218" Height="335" Left="1052" Top="341">
+	<HMIRectangle ZIndex="5" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFFFF00" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="b972d10a4df8491586bc414f55eaa3a1" Versions="5" NamePath="Main.Rectangle11" Width="218" Height="335" Left="1052" Top="341">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L31 &gt; 0.7 AND Var.L31 &lt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="5" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d1b56938324643f8acbe6738991ac23d" Versions="5" NamePath="Main.Rectangle12" Width="218" Height="335" Left="1052" Top="341">
+	<HMIRectangle ZIndex="6" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FFFF0000" StrokeThickness="6" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d1b56938324643f8acbe6738991ac23d" Versions="5" NamePath="Main.Rectangle12" Width="218" Height="335" Left="1052" Top="341">
 		<HMIRectangle.Animations>
 			<HMIShowHideAnimation ScanTime="300" Expression="Var.L31 &gt; 0.9" />
 		</HMIRectangle.Animations>
 	</HMIRectangle>
-	<HMIRectangle ZIndex="6" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="64fa7822586b4f598cbe135478784458" Versions="5" NamePath="Main.Rectangle0" Width="96" Height="35" Left="372" Top="1027" />
-	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="7" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="d68384d327c0408db23aa2fd4abff238" Versions="5" NamePath="Main.RoundedRectangle0" Width="158" Height="47" Left="53" Top="33" />
-	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="Manual" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="8" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="d5660b2141534704bb0684f18cbaed3f" Versions="5" NamePath="Main.MaintainedButton0" Fill="{x:Null}" Width="158" Height="47" Left="53" Top="33">
+	<HMIRectangle ZIndex="7" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="64fa7822586b4f598cbe135478784458" Versions="5" NamePath="Main.Rectangle0" Width="96" Height="35" Left="372" Top="1027" />
+	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="8" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="d68384d327c0408db23aa2fd4abff238" Versions="5" NamePath="Main.RoundedRectangle0" Width="158" Height="47" Left="53" Top="7" />
+	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="Manual" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="9" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="d5660b2141534704bb0684f18cbaed3f" Versions="5" NamePath="Main.MaintainedButton0" Fill="{x:Null}" Width="158" Height="47" Left="53" Top="7">
 		<HMIDigitalButton.DevTextInfo>
 			<HMITextInfo Text="Manual" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIDigitalButton.DevTextInfo>
@@ -69,14 +74,14 @@
 					</HMIDiscreteItemCollection>
 				</HMITextColorAnimation.ExpressionTable>
 			</HMITextColorAnimation>
-			<HMIDiscreteValueDisplayAnimation TrueText="Auto" FalseText="Manual" ScanTime="300" Expression="Var.PIDMode" />
+			<HMIDiscreteValueDisplayAnimation TrueText="PID Auto" FalseText="PID Manual" ScanTime="300" Expression="Var.PIDMode" />
 		</HMIDigitalButton.Animations>
 		<HMIDigitalButton.Actions>
 			<HMIMaintainedQuickAction Script="{x:Null}" Expression="Var.PIDMode" />
 		</HMIDigitalButton.Actions>
 	</HMIDigitalButton>
-	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="9" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="9afa1acc440a42a6942837bc190c5ca5" Versions="5" NamePath="Main.RoundedRectangle1" Width="158" Height="47" Left="224" Top="33" />
-	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="On" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="10" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="2da2e9dc2ce84fde856470f590366cfb" Versions="5" NamePath="Main.MaintainedButton1" Fill="{x:Null}" Width="158" Height="47" Left="224" Top="33">
+	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="10" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="9afa1acc440a42a6942837bc190c5ca5" Versions="5" NamePath="Main.RoundedRectangle1" Width="158" Height="47" Left="224" Top="7" />
+	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="On" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="11" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="2da2e9dc2ce84fde856470f590366cfb" Versions="5" NamePath="Main.MaintainedButton1" Fill="{x:Null}" Width="158" Height="47" Left="224" Top="7">
 		<HMIDigitalButton.DevTextInfo>
 			<HMITextInfo Text="On" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIDigitalButton.DevTextInfo>
@@ -108,7 +113,7 @@
 					</HMIDiscreteItemCollection>
 				</HMITextColorAnimation.ExpressionTable>
 			</HMITextColorAnimation>
-			<HMIDiscreteValueDisplayAnimation TrueText="On" FalseText="Off" ScanTime="300" Expression="Var.OPERMode" />
+			<HMIDiscreteValueDisplayAnimation TrueText="OPER On" FalseText="OPER Off" ScanTime="300" Expression="Var.OPERMode" />
 			<HMIFillAnimation ScanTime="300" Expression="Var.OPERMode">
 				<HMIFillAnimation.ExpressionTable>
 					<HMIDiscreteItemCollection />
@@ -119,7 +124,7 @@
 			<HMIMaintainedQuickAction Script="{x:Null}" Expression="Var.OPERMode" />
 		</HMIDigitalButton.Actions>
 	</HMIDigitalButton>
-	<HMIGroup ZIndex="11" Id="9653c3e36b854d5098bc2460857fd3b4" Versions="5" NamePath="Main.Pump0" Fill="{x:Null}" Width="116" Height="83" Left="365" Top="940" ScaleX="-1" ScaleY="1">
+	<HMIGroup ZIndex="12" Id="9653c3e36b854d5098bc2460857fd3b4" Versions="5" NamePath="Main.Pump0" Fill="{x:Null}" Width="116" Height="83" Left="365" Top="940" ScaleX="-1" ScaleY="1">
 		<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="90d2e7c0f3064afaaf43ba3518e0ee32" Versions="5" NamePath="Main.Pump0.Rectangle4" IsShow="True" Width="7.4358974358974361" Height="42.303225806451614" Left="108.78205128205129" Top="0.15161290322580712" RotateAngle="0" ScaleX="1" ScaleY="0.99999999999999989" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
 			<HMIRectangle.Fill>
 				<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
@@ -262,7 +267,7 @@
 			</HMIEllipse>
 		</HMIGroup>
 	</HMIGroup>
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="12" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="2dea54ed87e543a6bf7c78fff9e977c1" Versions="5" NamePath="Main.Text0" Width="90" Height="30" Left="376" Top="1029" TransformOrigin="-1.667,0.3">
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="13" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="2dea54ed87e543a6bf7c78fff9e977c1" Versions="5" NamePath="Main.Text0" Width="90" Height="30" Left="376" Top="1029" TransformOrigin="-1.667,0.3">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
@@ -273,9 +278,9 @@
 			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.P1) + &quot; &quot; + Var.P1.EngineeringUnit" />
 		</HMIText.Animations>
 	</HMIText>
-	<HMIGroup ZIndex="13" Id="994835e0f8d64290a85e80c8e249507c" Versions="5" NamePath="Main.ScrewValve0" Fill="{x:Null}" Width="77" Height="61" Left="95" Top="378" RotateAngle="90">
+	<HMIGroup ZIndex="14" Id="994835e0f8d64290a85e80c8e249507c" Versions="5" NamePath="Main.ScrewValve0" Fill="{x:Null}" Width="77" Height="61" Left="95" Top="378" RotateAngle="90">
 		<HMIGroup.Actions>
-			<HMIEvent Script="IF Var.OPERmode = 0 THEN&#xA;&#x9;Var.Temp.ValveSelect = 1&#xA;&#x9;Var.Temp.ValveValue = Var.CVG1man&#xA;&#x9;HMICmd.OpenDialogWindow(&quot;ValveControl&quot;)&#xA;END IF" EventName="MouseLeftButtonDown" Expression="IF Var.OPERmode = 0 THEN" />
+			<HMIEvent Script="IF Var.OPERmode = 0 THEN&#xA;&#x9;Var.Temp.ValveSelect = 2&#xA;&#x9;Var.Temp.ValveValue = Var.CVG2man&#xA;&#x9;HMICmd.OpenDialogWindow(&quot;ValveControl&quot;)&#xA;END IF" EventName="MouseLeftButtonDown" Expression="IF Var.OPERmode = 0 THEN" />
 		</HMIGroup.Actions>
 		<HMILine X1="39" Y1="11" X2="40" Y2="41" ScaleX="1" ScaleY="1" ZIndex="0" Stroke="#FF000000" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="a392559b8703431e9cd0e61b4bf26ee5" Versions="5" NamePath="Main.ScrewValve0.Line0" IsShow="True" Width="1.1159420289855073" Height="30.5" Left="39.115942028985508" Top="11.34090909090909" RotateAngle="0" />
 		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="5ffc62f234f04581820989fdff1b8805" Versions="5" NamePath="Main.ScrewValve0.Rectangle0" IsShow="True" Width="37.94202898550725" Height="13.863636363636363" Left="20.057971014492757" Top="-0.29318181818182021" TransformOrigin="0.5,2.15" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
@@ -286,9 +291,9 @@
 		<HMIPolygon Points="1.18,25 1,60 39,41.67" ZIndex="2" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="d9b232055a6a4527ba44581c4984b517" Versions="5" NamePath="Main.ScrewValve0.Polygon2" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="1.0869565217391326" Top="25.015151515151516" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 		<HMIPolygon Points="39.18,24 39,59 77,40.67" ZIndex="3" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="790b481218f74457bab3dbec5a0a7d3f" Versions="5" NamePath="Main.ScrewValve0.Polygon3" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="39.028985507246382" Top="24.090909090909086" RotateAngle="180" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="-1.4210854715202004E-14" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 	</HMIGroup>
-	<HMIGroup ZIndex="14" Id="a556174d9a2a4f9eba7a2bc5d7e7c901" Versions="5" NamePath="Main.ScrewValve1" Fill="{x:Null}" Width="77" Height="61" Left="193" Top="378" RotateAngle="270">
+	<HMIGroup ZIndex="15" Id="a556174d9a2a4f9eba7a2bc5d7e7c901" Versions="5" NamePath="Main.ScrewValve1" Fill="{x:Null}" Width="77" Height="61" Left="193" Top="378" RotateAngle="270" SecurityAreasString="sabf43e5">
 		<HMIGroup.Actions>
-			<HMIEvent Script="IF Var.OPERmode = 0 THEN&#xA;&#x9;Var.Temp.ValveSelect = 2&#xA;&#x9;Var.Temp.ValveValue = Var.CVG2man&#xA;&#x9;HMICmd.OpenDialogWindow(&quot;ValveControl&quot;)&#xA;END IF" EventName="MouseLeftButtonDown" Expression="IF Var.OPERmode = 0 THEN" />
+			<HMIEvent Script="IF Var.OPERmode = 0 THEN&#xA;&#x9;Var.Temp.ValveSelect = 1&#xA;&#x9;Var.Temp.ValveValue = Var.CVG1man&#xA;&#x9;HMICmd.OpenDialogWindow(&quot;ValveControl&quot;)&#xA;END IF" EventName="MouseLeftButtonDown" Expression="IF Var.OPERmode = 0 THEN" />
 		</HMIGroup.Actions>
 		<HMILine X1="39" Y1="11" X2="40" Y2="41" ScaleX="1" ScaleY="1" ZIndex="0" Stroke="#FF000000" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="8dcd06c33fa943a9bcf759d2705f6b9f" Versions="5" NamePath="Main.ScrewValve1.Line0" IsShow="True" Width="1.1159420289855073" Height="30.5" Left="39.115942028985508" Top="11.34090909090909" RotateAngle="0" />
 		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="4637694ebe2d4ae0a5f703173b04c264" Versions="5" NamePath="Main.ScrewValve1.Rectangle0" IsShow="True" Width="37.94202898550725" Height="13.863636363636363" Left="20.057971014492757" Top="-0.29318181818182021" TransformOrigin="0.5,2.15" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
@@ -299,20 +304,8 @@
 		<HMIPolygon Points="1.18,25 1,60 39,41.67" ZIndex="2" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="c90a188e2d23404aa24ac863806a69ed" Versions="5" NamePath="Main.ScrewValve1.Polygon2" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="1.0869565217391326" Top="25.015151515151516" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 		<HMIPolygon Points="39.18,24 39,59 77,40.67" ZIndex="3" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="7b79590a6d70405cb79afcce68a7ac7f" Versions="5" NamePath="Main.ScrewValve1.Polygon3" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="39.028985507246382" Top="24.090909090909086" RotateAngle="180" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="-1.4210854715202004E-14" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 	</HMIGroup>
-	<HMIRectangle ZIndex="15" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="4f6c655a634445c6958b8a3ad640330b" Versions="5" NamePath="Main.Rectangle1" Width="96" Height="35" Left="0" Top="391" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="16" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="8c6ca33125d145268602f797ef65bc4f" Versions="5" NamePath="Main.Text1" Width="58.000000000000007" Height="30" Left="3" Top="394">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.CVG1) + &quot; &quot; + Var.CVG1.EngineeringUnit" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIRectangle ZIndex="17" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="36a55853bccc48d58ff74e5f0236b9b3" Versions="5" NamePath="Main.Rectangle2" Width="96" Height="35" Left="267" Top="391" TransformOrigin="-1.042,-18.343" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="18" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="39a99f30cca04d168e9bb8697f1aa300" Versions="5" NamePath="Main.Text2" Width="56" Height="30" Left="269" Top="394">
+	<HMIRectangle ZIndex="16" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="4f6c655a634445c6958b8a3ad640330b" Versions="5" NamePath="Main.Rectangle1" Width="96" Height="35" Left="0" Top="391" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="17" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="8c6ca33125d145268602f797ef65bc4f" Versions="5" NamePath="Main.Text1" Width="58.000000000000007" Height="30" Left="2" Top="393">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
@@ -323,38 +316,30 @@
 			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.CVG2) + &quot; &quot; + Var.CVG2.EngineeringUnit" />
 		</HMIText.Animations>
 	</HMIText>
-	<HMIGroup ZIndex="19" Id="389e2fc017e6449f98ca5d10060fb2ef" Versions="5" NamePath="Main.CleaningTank0" Fill="{x:Null}" Width="209" Height="324" Left="394" Top="341">
+	<HMIRectangle ZIndex="18" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="36a55853bccc48d58ff74e5f0236b9b3" Versions="5" NamePath="Main.Rectangle2" Width="96" Height="35" Left="267" Top="391" TransformOrigin="-1.042,-18.343" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="19" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="39a99f30cca04d168e9bb8697f1aa300" Versions="5" NamePath="Main.Text2" Width="56" Height="30" Left="269" Top="394">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.CVG1) + &quot; &quot; + Var.CVG1.EngineeringUnit" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIGroup ZIndex="20" Id="389e2fc017e6449f98ca5d10060fb2ef" Versions="5" NamePath="Main.CleaningTank0" Fill="{x:Null}" Width="209" Height="324" Left="394" Top="341">
 		<HMIGroup.Actions>
 			<HMIEvent Script="Var.Temp.WaterSelect = 1&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 1" />
 		</HMIGroup.Actions>
-		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e576ce2ae66640df89004667504d0cb9" Versions="5" NamePath="Main.CleaningTank0.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="893769517b944b11b0bdd98fbdf42313" Versions="5" NamePath="Main.CleaningTank0.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FF9EF6F4" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="eca9907bca3549f9be1b2ea1e54ba85e" Versions="5" NamePath="Main.CleaningTank0.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e576ce2ae66640df89004667504d0cb9" Versions="5" NamePath="Main.CleaningTank0.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="893769517b944b11b0bdd98fbdf42313" Versions="5" NamePath="Main.CleaningTank0.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FFF2F2F2" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="eca9907bca3549f9be1b2ea1e54ba85e" Versions="5" NamePath="Main.CleaningTank0.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
 			<HMIRectangle.Animations>
 				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L11" />
 			</HMIRectangle.Animations>
 		</HMIRectangle>
-		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="ddbc5030c0964b758bf5a8ff66a520f8" Versions="5" NamePath="Main.CleaningTank0.Text0" IsShow="True" Width="29.857142857142858" Height="22.5" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="ddbc5030c0964b758bf5a8ff66a520f8" Versions="5" NamePath="Main.CleaningTank0.Text0" IsShow="True" Width="30" Height="32" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
 			<HMIText.DevTextInfo>
 				<HMITextInfo Text="1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 			</HMIText.DevTextInfo>
@@ -368,7 +353,7 @@
 		<HMILine X1="143" Y1="218" X2="157" Y2="218" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="38f38a62b0254ad280973abb0731b95a" Versions="5" NamePath="Main.CleaningTank0.Line5" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="218.375" RotateAngle="0" />
 		<HMILine X1="143" Y1="257" X2="157" Y2="257" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="a851c0161c4245b2882c7858bd3e862b" Versions="5" NamePath="Main.CleaningTank0.Line6" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="256.625" RotateAngle="0" />
 		<HMILine X1="143" Y1="297" X2="157" Y2="297" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="cc1a33fa307b4093a134bacd237736d6" Versions="5" NamePath="Main.CleaningTank0.Line7" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="297.125" RotateAngle="0" />
-		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="b311f81ac1a74b119f857256e9acb95d" Versions="5" NamePath="Main.CleaningTank0.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="b311f81ac1a74b119f857256e9acb95d" Versions="5" NamePath="Main.CleaningTank0.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
 			<HMIText.DevTextInfo>
 				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 			</HMIText.DevTextInfo>
@@ -376,41 +361,11 @@
 				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
 			</HMIText.DevFontStyle>
 		</HMIText>
-		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e8931117809a463886f935e52f13d63e" Versions="5" NamePath="Main.CleaningTank0.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="89a8460574e848b3a0378514b5940cf1" Versions="5" NamePath="Main.CleaningTank0.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="505f8528a5314d379c39718ee1b94ece" Versions="5" NamePath="Main.CleaningTank0.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
+		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e8931117809a463886f935e52f13d63e" Versions="5" NamePath="Main.CleaningTank0.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="89a8460574e848b3a0378514b5940cf1" Versions="5" NamePath="Main.CleaningTank0.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Fill="#FFBFBFBF" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="505f8528a5314d379c39718ee1b94ece" Versions="5" NamePath="Main.CleaningTank0.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 	</HMIGroup>
-	<HMIGroup ZIndex="20" Id="55636cf510214a9fbb6e987c99c858e0" Versions="5" NamePath="Main.ScrewValve2" Fill="{x:Null}" Width="77" Height="61" Left="632" Top="745" RotateAngle="0">
+	<HMIGroup ZIndex="21" Id="55636cf510214a9fbb6e987c99c858e0" Versions="5" NamePath="Main.ScrewValve2" Fill="{x:Null}" Width="77" Height="61" Left="632" Top="745" RotateAngle="0">
 		<HMILine X1="39" Y1="11" X2="40" Y2="41" ScaleX="1" ScaleY="1" ZIndex="0" Stroke="#FF000000" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="b10f8af144ff4679866cf98fc26485ad" Versions="5" NamePath="Main.ScrewValve2.Line0" IsShow="True" Width="1.1159420289855073" Height="30.5" Left="39.115942028985508" Top="11.34090909090909" RotateAngle="0" />
 		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e466200cf2cc41b0abb66a2a6dfd59c1" Versions="5" NamePath="Main.ScrewValve2.Rectangle0" IsShow="True" Width="37.94202898550725" Height="13.863636363636363" Left="20.057971014492757" Top="-0.29318181818182021" TransformOrigin="0.5,2.15" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
 			<HMIRectangle.Animations>
@@ -420,8 +375,8 @@
 		<HMIPolygon Points="1.18,25 1,60 39,41.67" ZIndex="2" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="06da596e5e2a470196f57d4417c3d202" Versions="5" NamePath="Main.ScrewValve2.Polygon2" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="1.0869565217391326" Top="25.015151515151516" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 		<HMIPolygon Points="39.18,24 39,59 77,40.67" ZIndex="3" IsImage="False" FillImage="" Fill="#FFC0C5CD" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="473a1c494a964ec7a9f2788a687ccbac" Versions="5" NamePath="Main.ScrewValve2.Polygon3" IsShow="True" Width="37.94202898550725" Height="35.121212121212118" Left="39.028985507246382" Top="24.090909090909086" RotateAngle="180" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="-1.4210854715202004E-14" SkewAngleY="0" TranslationX="0" TranslationY="0" />
 	</HMIGroup>
-	<HMIRectangle ZIndex="21" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="14bd903438ff4281b92dc0cda2f19db1" Versions="5" NamePath="Main.Rectangle3" Width="96" Height="35" Left="626" Top="822" TransformOrigin="-1.042,-18.343" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="22" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="bf25eaf73e1b4777a918e79c949c5aec" Versions="5" NamePath="Main.Text3" Width="48" Height="30" Left="630" Top="824.5">
+	<HMIRectangle ZIndex="22" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="14bd903438ff4281b92dc0cda2f19db1" Versions="5" NamePath="Main.Rectangle3" Width="96" Height="35" Left="626" Top="822" TransformOrigin="-1.042,-18.343" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="23" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="bf25eaf73e1b4777a918e79c949c5aec" Versions="5" NamePath="Main.Text3" Width="48" Height="30" Left="630" Top="824.5">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
@@ -432,287 +387,239 @@
 			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.CVG12) + &quot; &quot; + Var.CVG12.EngineeringUnit" />
 		</HMIText.Animations>
 	</HMIText>
-	<HMIGroup ZIndex="23" Id="e923073dddd6409390a910c305c98635" Versions="5" NamePath="Main.CleaningTank1" Fill="{x:Null}" Width="209" Height="324" Left="742" Top="341">
-		<HMIGroup.Actions>
-			<HMIEvent Script="Var.Temp.WaterSelect = 2&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 2" />
-		</HMIGroup.Actions>
-		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="b5d60af7d0f741d8838307d64aeeafef" Versions="5" NamePath="Main.CleaningTank1.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="88aeac257c0a466c80f69bcf66591dc6" Versions="5" NamePath="Main.CleaningTank1.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FF9EF6F4" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="d7b9e7e14c004f00bba61633cdd568a8" Versions="5" NamePath="Main.CleaningTank1.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Animations>
-				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L21" />
-			</HMIRectangle.Animations>
-		</HMIRectangle>
-		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="11aa38fc078041a9a4535fde53f6aa37" Versions="5" NamePath="Main.CleaningTank1.Text0" IsShow="True" Width="29.857142857142858" Height="22.5" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="1" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-		</HMIText>
-		<HMILine X1="143" Y1="97" X2="157" Y2="97" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="097ea2554e8f4b859ee66f02f99461de" Versions="5" NamePath="Main.CleaningTank1.Line2" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="96.875" RotateAngle="0" />
-		<HMILine X1="143" Y1="140" X2="157" Y2="140" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d3e425a3733c4b2cad869e3c006225a8" Versions="5" NamePath="Main.CleaningTank1.Line3" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="139.625" RotateAngle="0" />
-		<HMILine X1="143" Y1="180" X2="157" Y2="180" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="e45255d10811432388df714db52a9c3b" Versions="5" NamePath="Main.CleaningTank1.Line4" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="180.125" RotateAngle="0" />
-		<HMILine X1="143" Y1="218" X2="157" Y2="218" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="049554d5b53241488811a6728f76d4e3" Versions="5" NamePath="Main.CleaningTank1.Line5" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="218.375" RotateAngle="0" />
-		<HMILine X1="143" Y1="257" X2="157" Y2="257" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="aa6308a5b41948f89dd4bdcf08d87259" Versions="5" NamePath="Main.CleaningTank1.Line6" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="256.625" RotateAngle="0" />
-		<HMILine X1="143" Y1="297" X2="157" Y2="297" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="9e9ac1dbab7740e8b1726445f23ba3cc" Versions="5" NamePath="Main.CleaningTank1.Line7" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="297.125" RotateAngle="0" />
-		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="c9a6cacb8e3f49d6a46f4db8e8b6070d" Versions="5" NamePath="Main.CleaningTank1.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-		</HMIText>
-		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="722649e227d645098e44998676ee2565" Versions="5" NamePath="Main.CleaningTank1.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="0dbf5e02bab746e2a28d68080770f7c5" Versions="5" NamePath="Main.CleaningTank1.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="1da44b3a3f5b4578a94857b19e9c082f" Versions="5" NamePath="Main.CleaningTank1.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-	</HMIGroup>
-	<HMIGroup ZIndex="24" Id="a109ea3903d745cf872fd57a10b42ba3" Versions="5" NamePath="Main.CleaningTank2" Fill="{x:Null}" Width="209" Height="324" Left="1057" Top="347">
-		<HMIGroup.Actions>
-			<HMIEvent Script="Var.Temp.WaterSelect = 3&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 3" />
-		</HMIGroup.Actions>
-		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="cc4f9ed0d30d40dda532a2cf7da3711f" Versions="5" NamePath="Main.CleaningTank2.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="084fbae1f7434d82b0efc11764d801dc" Versions="5" NamePath="Main.CleaningTank2.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FF9EF6F4" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="70f1266172934a319816aec5dc74cf99" Versions="5" NamePath="Main.CleaningTank2.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Animations>
-				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L31" />
-			</HMIRectangle.Animations>
-		</HMIRectangle>
-		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="636fbd0a1a4245d0a9786ca48f04b251" Versions="5" NamePath="Main.CleaningTank2.Text0" IsShow="True" Width="29.857142857142858" Height="22.5" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="1" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-		</HMIText>
-		<HMILine X1="143" Y1="97" X2="157" Y2="97" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="2f74676b756d4c678c90c6eabdadab4a" Versions="5" NamePath="Main.CleaningTank2.Line2" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="96.875" RotateAngle="0" />
-		<HMILine X1="143" Y1="140" X2="157" Y2="140" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="ec822f02662d48c29ca6426cd448eefd" Versions="5" NamePath="Main.CleaningTank2.Line3" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="139.625" RotateAngle="0" />
-		<HMILine X1="143" Y1="180" X2="157" Y2="180" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="f66cb53e602e48689e37c3ad4949ac74" Versions="5" NamePath="Main.CleaningTank2.Line4" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="180.125" RotateAngle="0" />
-		<HMILine X1="143" Y1="218" X2="157" Y2="218" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="a4e702ff9928458ba0204ece12a1ca60" Versions="5" NamePath="Main.CleaningTank2.Line5" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="218.375" RotateAngle="0" />
-		<HMILine X1="143" Y1="257" X2="157" Y2="257" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="318fffa51f984ba28b51d5b53bc494a3" Versions="5" NamePath="Main.CleaningTank2.Line6" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="256.625" RotateAngle="0" />
-		<HMILine X1="143" Y1="297" X2="157" Y2="297" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="e74af68673d345c7a33692a05f3bfc35" Versions="5" NamePath="Main.CleaningTank2.Line7" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="297.125" RotateAngle="0" />
-		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="4b1ef0d9f53f4cda8ef56c7e17e825d9" Versions="5" NamePath="Main.CleaningTank2.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-		</HMIText>
-		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="a1668a9d6dd3428699638061a07dfd3a" Versions="5" NamePath="Main.CleaningTank2.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="ec335e1afc504752b776d116501bd41b" Versions="5" NamePath="Main.CleaningTank2.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="ea534674dfb04a7898a274c0e220e52e" Versions="5" NamePath="Main.CleaningTank2.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-	</HMIGroup>
-	<HMIPolyLine Points="364,960 243,960 244,447" ZIndex="25" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="589ce821d430425b87acff5a62a5154c" Versions="5" NamePath="Main.Polyline0" Width="121" Height="513" Left="243" Top="447" />
-	<HMIPolyLine Points="241,811 120,811 121,446" ZIndex="26" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="6f4e2944b4bd402fb2ee50fc7fe0f059" Versions="5" NamePath="Main.Polyline1" Width="121" Height="365" Left="120" Top="446" />
-	<HMIPolyLine Points="459,412 285,412 286.44,152" ZIndex="27" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="2b886cae08ba42ab8116d306211b02e4" Versions="5" NamePath="Main.Polyline2" Width="174" Height="260.5" Left="285" Top="152" RotateAngle="90" />
-	<HMIPolygon Points="303,970 328,970 315.5,952" ZIndex="28" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="8f1eab11bfec4b6ea31271bf553664b6" Versions="5" NamePath="Main.Polygon1" Width="25" Height="18" Left="303" Top="952" RotateAngle="270" />
-	<HMIPolygon Points="484,277 509,277 496.5,259" ZIndex="29" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b5fb74f101c94ee0af10769c8d49e759" Versions="5" NamePath="Main.Polygon0" Width="25" Height="18" Left="484" Top="259" RotateAngle="180" />
-	<HMIPolygon Points="843,284 868,284 855.5,266" ZIndex="30" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b5b60d903c5a4a299eeaaade9ffa2ecc" Versions="5" NamePath="Main.Polygon2" Width="25" Height="18" Left="843" Top="266" RotateAngle="180" />
-	<HMIPolyLine Points="606,619 370,619 371.95,-119" ZIndex="31" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="3504ed4db8524f1589bdc6bad83c64e2" Versions="5" NamePath="Main.Polyline3" Width="236" Height="737.5" Left="370" Top="-119" RotateAngle="90" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
-	<HMILine X1="498" Y1="198" X2="499" Y2="260" ZIndex="32" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="04175062e6884207b84a07f0b76e9619" Versions="5" NamePath="Main.Line0" Width="1" Height="62" Left="498" Top="198" />
-	<HMILine X1="855" Y1="132" X2="856" Y2="278" ZIndex="33" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="0de154697c9246dd9f66658b74f65b13" Versions="5" NamePath="Main.Line1" Width="1" Height="146" Left="855" Top="132" />
-	<HMIPolyLine Points="633,788 492,788 493.17,668" ZIndex="34" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="dff4ea19f0274f8fb3b359276a472cc3" Versions="5" NamePath="Main.Polyline4" Width="141" Height="120" Left="492" Top="668" />
-	<HMIPolyLine Points="829,788 707,788 708.01,676" ZIndex="35" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d83171f863ff4e60910e736c60603c2d" Versions="5" NamePath="Main.Polyline5" Width="122" Height="112" Left="707" Top="676" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
-	<HMIPolyLine Points="1139,793 875,793 877.19,673" ZIndex="36" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5458ced377494c1aa956456b508f1ac3" Versions="5" NamePath="Main.Polyline6" Width="264" Height="120" Left="875" Top="673" />
-	<HMILine X1="1135" Y1="675" X2="1136" Y2="790" ZIndex="37" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="134ee15f1d8146c183fc96c74d1465c9" Versions="5" NamePath="Main.Line2" Width="1" Height="115" Left="1135" Top="675" />
-	<HMIPolyLine Points="1298,789 1078,789 1079.82,781" ZIndex="38" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="3a2d9e478c2b40d787f32bcdae6a6069" Versions="5" NamePath="Main.Polyline7" Width="220" Height="8" Left="1078" Top="781" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
-	<HMIPolygon Points="1179,909 1204,909 1191.5,891" ZIndex="39" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b57ede21100843f6b5984b6c23150d7b" Versions="5" NamePath="Main.Polygon3" Width="25" Height="18" Left="1179" Top="891" RotateAngle="180" />
-	<HMIGroup ZIndex="40" Id="389e2fc017e6449f98ca5d10060fb2ef" Versions="5" NamePath="Main.CleaningTank3" Fill="{x:Null}" Width="793" Height="130" Left="523" Top="927">
-		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e576ce2ae66640df89004667504d0cb9" Versions="5" NamePath="Main.CleaningTank3.Ellipse2" IsShow="True" Width="740.54960629921254" Height="11.620111731843576" Left="26" Top="118.18994413407822" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="893769517b944b11b0bdd98fbdf42313" Versions="5" NamePath="Main.CleaningTank3.Rectangle28" IsShow="True" Width="740.54960629921254" Height="111.84357541899442" Left="26" Top="12.994413407821227" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFFFFFFF" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FF9EF6F4" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="eca9907bca3549f9be1b2ea1e54ba85e" Versions="5" NamePath="Main.CleaningTank3.LiquidLevel" IsShow="True" Width="310.955905511811" Height="82.793296089385478" Left="224.76535433070865" Top="37.662011173184354" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Animations>
-				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="5" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="" />
-			</HMIRectangle.Animations>
-		</HMIRectangle>
-		<HMIText Text="5" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="ddbc5030c0964b758bf5a8ff66a520f8" Versions="5" NamePath="Main.CleaningTank3.Text0" IsShow="True" Width="112.39370078740157" Height="9.4413407821229054" Left="620.66299212598426" Top="34.134078212290504" TransformOrigin="0,0" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="5" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-			<HMIText.Animations>
-				<HMIShowHideAnimation ScanTime="300" Expression="Cos(1) = 0" />
-			</HMIText.Animations>
-		</HMIText>
-		<HMILine X1="542" Y1="39" X2="594" Y2="39" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="770b171cf0e44404ba377a31596d310a" Versions="5" NamePath="Main.CleaningTank3.Line2" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="39.081005586592177" RotateAngle="0" />
-		<HMILine X1="542" Y1="56" X2="594" Y2="56" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="767ebe2625804c6b8d70eb91026397d7" Versions="5" NamePath="Main.CleaningTank3.Line3" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="55.784916201117319" RotateAngle="0" />
-		<HMILine X1="542" Y1="72" X2="594" Y2="72" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="bc87442649564007a71db7c58df6c306" Versions="5" NamePath="Main.CleaningTank3.Line4" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="71.762569832402235" RotateAngle="0" />
-		<HMILine X1="542" Y1="88" X2="594" Y2="88" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="38f38a62b0254ad280973abb0731b95a" Versions="5" NamePath="Main.CleaningTank3.Line5" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="87.740223463687158" RotateAngle="0" />
-		<HMILine X1="542" Y1="103" X2="594" Y2="103" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="a851c0161c4245b2882c7858bd3e862b" Versions="5" NamePath="Main.CleaningTank3.Line6" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="102.99162011173185" RotateAngle="0" />
-		<HMILine X1="542" Y1="119" X2="594" Y2="119" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="cc1a33fa307b4093a134bacd237736d6" Versions="5" NamePath="Main.CleaningTank3.Line7" IsShow="True" Width="52.4503937007874" Height="0.72625698324022347" Left="542.2125984251968" Top="118.96927374301676" RotateAngle="0" />
-		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFB0C4DE" Opacity="1" Stroke="#FF000000" Id="b311f81ac1a74b119f857256e9acb95d" Versions="5" NamePath="Main.CleaningTank3.Text1" IsShow="True" Width="112.39370078740157" Height="13.072625698324023" Left="614.41889763779523" Top="113.29608938547486" TransformOrigin="0,0" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIText.DevTextInfo>
-				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-			</HMIText.DevTextInfo>
-			<HMIText.DevFontStyle>
-				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-			</HMIText.DevFontStyle>
-			<HMIText.Animations>
-				<HMIShowHideAnimation ScanTime="300" Expression="Cos(1) = 0" />
-			</HMIText.Animations>
-		</HMIText>
-		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="e8931117809a463886f935e52f13d63e" Versions="5" NamePath="Main.CleaningTank3.Ellipse3" IsShow="True" Width="779.26299212598417" Height="11.620111731843576" Left="7.6244094488188807" Top="13.833072625698325" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="89a8460574e848b3a0378514b5940cf1" Versions="5" NamePath="Main.CleaningTank3.Rectangle30" IsShow="True" Width="793" Height="13.798882681564246" Left="0" Top="5.7054748603351939" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIRectangle.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIRectangle.Fill>
-		</HMIRectangle>
-		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="505f8528a5314d379c39718ee1b94ece" Versions="5" NamePath="Main.CleaningTank3.Ellipse4" IsShow="True" Width="779.26299212598417" Height="11.620111731843576" Left="7.6244094488188807" Top="-0.41407821229050246" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
-			<HMIEllipse.Fill>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad" Opacity="1">
-					<LinearGradientBrush.GradientStops>
-						<GradientStop Color="#FF000000" Offset="0" />
-						<GradientStop Color="#FFC0C0C0" Offset="0.5" />
-						<GradientStop Color="#FF000000" Offset="1" />
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</HMIEllipse.Fill>
-		</HMIEllipse>
-	</HMIGroup>
-	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="41" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="ed2592646f674c5d9b1114b53ab751d0" Versions="5" NamePath="Main.RoundedRectangle2" Width="158" Height="47" Left="392" Top="33" />
-	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="Hidden Info" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="42" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="d8a220fcdeb548f083fa44e25dda8c6b" Versions="5" NamePath="Main.MaintainedButton2" Fill="{x:Null}" Width="158" Height="47" Left="392" Top="33">
+	<HMIPolyLine Points="364,960 243,960 244,447" ZIndex="24" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="589ce821d430425b87acff5a62a5154c" Versions="5" NamePath="Main.Polyline0" Width="121" Height="513" Left="243" Top="447" />
+	<HMIPolyLine Points="241,811 120,811 121,446" ZIndex="25" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="6f4e2944b4bd402fb2ee50fc7fe0f059" Versions="5" NamePath="Main.Polyline1" Width="121" Height="365" Left="120" Top="446" />
+	<HMIPolyLine Points="459,412 285,412 286.44,152" ZIndex="26" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="2b886cae08ba42ab8116d306211b02e4" Versions="5" NamePath="Main.Polyline2" Width="174" Height="260.5" Left="285" Top="152" RotateAngle="90" />
+	<HMIPolygon Points="303,970 328,970 315.5,952" ZIndex="27" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="8f1eab11bfec4b6ea31271bf553664b6" Versions="5" NamePath="Main.Polygon1" Width="25" Height="18" Left="303" Top="952" RotateAngle="270" />
+	<HMIPolygon Points="484,277 509,277 496.5,259" ZIndex="28" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b5fb74f101c94ee0af10769c8d49e759" Versions="5" NamePath="Main.Polygon0" Width="25" Height="18" Left="484" Top="259" RotateAngle="180" />
+	<HMIPolygon Points="843,284 868,284 855.5,266" ZIndex="29" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b5b60d903c5a4a299eeaaade9ffa2ecc" Versions="5" NamePath="Main.Polygon2" Width="25" Height="18" Left="843" Top="266" RotateAngle="180" />
+	<HMIPolyLine Points="596,629 380,629 381.78,-109" ZIndex="30" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="3504ed4db8524f1589bdc6bad83c64e2" Versions="5" NamePath="Main.Polyline3" Width="216" Height="738" Left="380" Top="-109" RotateAngle="90" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+	<HMILine X1="498" Y1="198" X2="499" Y2="260" ZIndex="31" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="04175062e6884207b84a07f0b76e9619" Versions="5" NamePath="Main.Line0" Width="1" Height="62" Left="498" Top="198" />
+	<HMIPolyLine Points="633,788 492,788 493.17,668" ZIndex="32" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="dff4ea19f0274f8fb3b359276a472cc3" Versions="5" NamePath="Main.Polyline4" Width="141" Height="120" Left="492" Top="668" />
+	<HMIPolyLine Points="829,788 707,788 708.01,676" ZIndex="33" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d83171f863ff4e60910e736c60603c2d" Versions="5" NamePath="Main.Polyline5" Width="122" Height="112" Left="707" Top="676" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
+	<HMIPolyLine Points="1139,793 875,793 877.19,673" ZIndex="34" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5458ced377494c1aa956456b508f1ac3" Versions="5" NamePath="Main.Polyline6" Width="264" Height="120" Left="875" Top="673" />
+	<HMILine X1="1135" Y1="675" X2="1136" Y2="790" ZIndex="35" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="134ee15f1d8146c183fc96c74d1465c9" Versions="5" NamePath="Main.Line2" Width="1" Height="115" Left="1135" Top="675" />
+	<HMIPolyLine Points="1298,789 1078,789 1079.82,781" ZIndex="36" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="3a2d9e478c2b40d787f32bcdae6a6069" Versions="5" NamePath="Main.Polyline7" Width="220" Height="8" Left="1078" Top="781" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
+	<HMIPolygon Points="1179,909 1204,909 1191.5,891" ZIndex="37" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="b57ede21100843f6b5984b6c23150d7b" Versions="5" NamePath="Main.Polygon3" Width="25" Height="18" Left="1179" Top="891" RotateAngle="180" />
+	<HMIText Text="CV2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="38" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="3c09dd129c26469ab39d36c74847c86a" Versions="5" NamePath="Main.Text4" Width="77" Height="28" Left="7" Top="354">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="CV2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="CV1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="39" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="b7bbeafa6044436e93809f7a0ba73476" Versions="5" NamePath="Main.Text5" Width="77" Height="28" Left="271" Top="355">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="CV1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="L11" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="40" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="33d389042aa2446a819e356d135c138b" Versions="5" NamePath="Main.Text6" Width="77" Height="28" Left="610" Top="498">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="L11" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="L21" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="41" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="d04d887b249a47b8a0ed18904c64fdcd" Versions="5" NamePath="Main.Text7" Width="77" Height="28" Left="960" Top="498">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="L21" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="L31" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="42" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="f136c7e0e39c4c7c908c356508ef8f55" Versions="5" NamePath="Main.Text8" Width="77" Height="28" Left="1275" Top="498">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="L31" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="CV12" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="43" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="36bef0c1ea2b4ced9d37e20aadc49c0d" Versions="5" NamePath="Main.Text9" Width="63.000000000000007" Height="28" Left="643" Top="717">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="CV12" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="P1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="44" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="d05a91098a47486eb25d041ffb94b18b" Versions="5" NamePath="Main.Text10" Width="34" Height="28" Left="410" Top="908">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="P1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIPolyLine Points="556,1005 496,1005 496.5,997" ZIndex="45" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="18991e350b9640b99320cab96e5334d9" Versions="5" NamePath="Main.Polyline8" Width="60" Height="8" Left="496" Top="997" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
+	<HMIPolygon Points="477,1015 502,1015 489.5,997" ZIndex="46" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="1d7f11118ad04df6a3ea0579cf0524e8" Versions="5" NamePath="Main.Polygon4" Width="25" Height="18" Left="477" Top="997" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+	<HMIText Text="F2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="47" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="1d9234d6e14e4ee1a1cc2fa7cbb96846" Versions="5" NamePath="Main.Text11" Width="77" Height="28" Left="662" Top="103">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="F2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="F1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="48" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="5ef999242ffb4a1ea33253a857e1a897" Versions="5" NamePath="Main.Text12" Width="77" Height="28" Left="359" Top="157">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="F1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="F3" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="49" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="b9803eb534a64517a553ab4fb9c78329" Versions="5" NamePath="Main.Text13" Width="77" Height="28" Left="1276" Top="826">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="F3" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIRectangle ZIndex="50" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="fa102e5057774b2394c98d12002bccf9" Versions="5" NamePath="Main.Rectangle4" Width="120" Height="35" Left="628" Top="132" TransformOrigin="-1.042,-18.343" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="51" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="5125cb21fd574535902f435bb456e67a" Versions="5" NamePath="Main.Text14" Width="90" Height="30" Left="632" Top="135">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F1) + &quot; &quot; + Var.F1.EngineeringUnit" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIRectangle ZIndex="52" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="d02f47f95315425d8a02ccecd60869b7" Versions="5" NamePath="Main.Rectangle5" Width="120" Height="35" Left="315" Top="183" TransformOrigin="-1.042,-18.343" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="53" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="81390eb5699c4ed184fb02181402785a" Versions="5" NamePath="Main.Text15" Width="90" Height="30" Left="319" Top="185.5">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F2) + &quot; &quot; + Var.F2.EngineeringUnit" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIRectangle ZIndex="54" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="dd00ea1004d1428fafd382c321790425" Versions="5" NamePath="Main.Rectangle6" Width="120" Height="35" Left="1137" Top="824" TransformOrigin="-1.042,-18.343" />
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="55" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c86ca9f3e84343609cf79011d626d2a8" Versions="5" NamePath="Main.Text16" Width="90" Height="30" Left="1141" Top="826.5">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F3) + &quot; &quot; + Var.F3.EngineeringUnit" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="Tank 1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="56" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="49c571b25610475aad1dda4ff9d579c3" Versions="5" NamePath="Main.Text17" Width="77" Height="28" Left="463" Top="295">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Tank 1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="Tank 2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="57" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="ac87df9012e64e349b8eb8e9c5507c5a" Versions="5" NamePath="Main.Text18" Width="77" Height="28" Left="823" Top="295">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Tank 2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMIText Text="Tank 3" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="58" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="f1d52cb29531453c95802f8ca6bf70e9" Versions="5" NamePath="Main.Text19" Width="77" Height="28" Left="1132" Top="294">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Tank 3" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMIText.Animations>
+	</HMIText>
+	<HMILine X1="158" Y1="389" X2="157" Y2="319" ZIndex="59" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="df35c8e16d0043569ea1b31254ef10b4" Versions="5" NamePath="Main.Line3" Width="1" Height="70" Left="157" Top="319">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="210" Y1="389" X2="209" Y2="319" ZIndex="60" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="dec78e041b254d04b5b1fe30b423bbd1" Versions="5" NamePath="Main.Line4" Width="1" Height="70" Left="209" Top="319">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="855" Y1="150" X2="856" Y2="270" ZIndex="61" Stroke="#FF000000" StrokeThickness="8" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5ca85daced8d40baa5a6182714484dd1" Versions="5" NamePath="Main.Line1" Width="1" Height="120" Left="855" Top="150" />
+	<HMILine X1="183" Y1="257" X2="182" Y2="97" ZIndex="62" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="645e782ee1424c45a55c7dfcfa210f5f" Versions="5" NamePath="Main.Line5" Width="1" Height="160" Left="182" Top="97">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="1363" Y1="596" X2="1362" Y2="96" ZIndex="63" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="d33a58414a4145bdacdf66ecb2b56d2a" Versions="5" NamePath="Main.Line6" Width="1" Height="500" Left="1362" Top="96">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="773" Y1="689" X2="772" Y2="-491" ZIndex="64" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="eba0acb655114454acfd05df27050c9e" Versions="5" NamePath="Main.Line7" Width="1" Height="1180" Left="772.5" Top="-491" RotateAngle="90">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="1318" Y1="641" X2="1317" Y2="551" ScaleX="-1" ScaleY="1" ZIndex="65" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="2" Id="4ef779b148044277a66cab273e722372" Versions="5" NamePath="Main.Line8" Width="1" Height="90" Left="1317" Top="551" RotateAngle="90">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMILine X1="182" Y1="258" X2="210" Y2="316" ZIndex="66" Stroke="#FF000000" Id="ab0eafc591f942f7bfabf4659fdc0d99" Versions="5" NamePath="Main.Line9" Width="28" Height="57.999999999999993" Left="182" Top="258">
+		<HMILine.Animations>
+			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
+		</HMILine.Animations>
+	</HMILine>
+	<HMIRoundRectangle RadiusX="45" RadiusY="45" ZIndex="67" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="f23f7df907b842ec8302bb0347b285e3" Versions="5" NamePath="Main.RoundedRectangle3" Width="158" Height="47" Left="388" Top="6" />
+	<HMIDigitalButton FunctionButtonType="MaintainedButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="##" Content="Hidden Info" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Invisible" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="68" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="20" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="3386285aed2a489db32e9b5325856afa" Versions="5" NamePath="Main.MaintainedButton3" Fill="{x:Null}" Width="158" Height="47" Left="388" Top="6">
 		<HMIDigitalButton.DevTextInfo>
 			<HMITextInfo Text="Hidden Info" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIDigitalButton.DevTextInfo>
@@ -755,185 +662,115 @@
 			<HMIMaintainedQuickAction Script="{x:Null}" Expression="Var.Service.ShowInfo" />
 		</HMIDigitalButton.Actions>
 	</HMIDigitalButton>
-	<HMIText Text="CV1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="43" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="3c09dd129c26469ab39d36c74847c86a" Versions="5" NamePath="Main.Text4" Width="77" Height="28" Left="7" Top="355">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="CV1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="CV2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="44" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="b7bbeafa6044436e93809f7a0ba73476" Versions="5" NamePath="Main.Text5" Width="77" Height="28" Left="271" Top="355">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="CV2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="L11" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="45" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="33d389042aa2446a819e356d135c138b" Versions="5" NamePath="Main.Text6" Width="77" Height="28" Left="610" Top="498">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="L11" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="L21" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="46" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="d04d887b249a47b8a0ed18904c64fdcd" Versions="5" NamePath="Main.Text7" Width="77" Height="28" Left="960" Top="498">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="L21" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="L31" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="47" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="f136c7e0e39c4c7c908c356508ef8f55" Versions="5" NamePath="Main.Text8" Width="77" Height="28" Left="1283" Top="498">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="L31" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="CV12" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="48" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="36bef0c1ea2b4ced9d37e20aadc49c0d" Versions="5" NamePath="Main.Text9" Width="63.000000000000007" Height="28" Left="643" Top="717">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="CV12" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="P1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="49" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="d05a91098a47486eb25d041ffb94b18b" Versions="5" NamePath="Main.Text10" Width="34" Height="28" Left="410" Top="908">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="P1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIPolyLine Points="556,1005 496,1005 496.5,997" ZIndex="50" Stroke="#FF000000" StrokeThickness="7" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="18991e350b9640b99320cab96e5334d9" Versions="5" NamePath="Main.Polyline8" Width="60" Height="8" Left="496" Top="997" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" TranslationX="0" />
-	<HMIPolygon Points="477,1015 502,1015 489.5,997" ZIndex="51" IsImage="False" FillImage="" Fill="#FF000000" Opacity="1" Stroke="#FF000000" Id="1d7f11118ad04df6a3ea0579cf0524e8" Versions="5" NamePath="Main.Polygon4" Width="25" Height="18" Left="477" Top="997" RotateAngle="270" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
-	<HMIText Text="F1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="52" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="1d9234d6e14e4ee1a1cc2fa7cbb96846" Versions="5" NamePath="Main.Text11" Width="77" Height="28" Left="666" Top="86">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="F1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="F2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="53" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="5ef999242ffb4a1ea33253a857e1a897" Versions="5" NamePath="Main.Text12" Width="77" Height="28" Left="359" Top="157">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="F2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="F3" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="54" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="b9803eb534a64517a553ab4fb9c78329" Versions="5" NamePath="Main.Text13" Width="77" Height="28" Left="1276" Top="826">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="F3" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIRectangle ZIndex="55" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="fa102e5057774b2394c98d12002bccf9" Versions="5" NamePath="Main.Rectangle4" Width="120" Height="35" Left="632" Top="115" TransformOrigin="-1.042,-18.343" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="56" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="5125cb21fd574535902f435bb456e67a" Versions="5" NamePath="Main.Text14" Width="90" Height="30" Left="636" Top="117.5">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F1) + &quot; &quot; + Var.F1.EngineeringUnit" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIRectangle ZIndex="57" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="d02f47f95315425d8a02ccecd60869b7" Versions="5" NamePath="Main.Rectangle5" Width="120" Height="35" Left="315" Top="183" TransformOrigin="-1.042,-18.343" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="58" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="81390eb5699c4ed184fb02181402785a" Versions="5" NamePath="Main.Text15" Width="90" Height="30" Left="319" Top="185.5">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F2) + &quot; &quot; + Var.F2.EngineeringUnit" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIRectangle ZIndex="59" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="dd00ea1004d1428fafd382c321790425" Versions="5" NamePath="Main.Rectangle6" Width="120" Height="35" Left="1137" Top="824" TransformOrigin="-1.042,-18.343" />
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="60" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="c86ca9f3e84343609cf79011d626d2a8" Versions="5" NamePath="Main.Text16" Width="90" Height="30" Left="1141" Top="826.5">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="20" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMITextAnimation ScanTime="300" Expression="CSTR(Var.F3) + &quot; &quot; + Var.F3.EngineeringUnit" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="Tank 1" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="61" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="49c571b25610475aad1dda4ff9d579c3" Versions="5" NamePath="Main.Text17" Width="77" Height="28" Left="463" Top="295">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="Tank 1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="Tank 2" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="62" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="ac87df9012e64e349b8eb8e9c5507c5a" Versions="5" NamePath="Main.Text18" Width="77" Height="28" Left="823" Top="295">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="Tank 2" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
-	<HMIText Text="Tank 3" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="63" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="f1d52cb29531453c95802f8ca6bf70e9" Versions="5" NamePath="Main.Text19" Width="77" Height="28" Left="1132" Top="294">
-		<HMIText.DevTextInfo>
-			<HMITextInfo Text="Tank 3" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
-		</HMIText.DevTextInfo>
-		<HMIText.DevFontStyle>
-			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Times New Roman" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
-		</HMIText.DevFontStyle>
-		<HMIText.Animations>
-			<HMIShowHideAnimation ScanTime="300" Expression="Var.Service.ShowInfo" />
-		</HMIText.Animations>
-	</HMIText>
+	<HMIGroup ZIndex="69" Id="558f2eea3f804431a6a602fd66f6affa" Versions="5" NamePath="Main.CleaningTank1" Fill="{x:Null}" Width="209" Height="324" Left="740" Top="343">
+		<HMIGroup.Actions>
+			<HMIEvent Script="Var.Temp.WaterSelect = 2&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 2" />
+		</HMIGroup.Actions>
+		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="eada65c90514438c870bf334cc49e01e" Versions="5" NamePath="Main.CleaningTank1.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="dcdd863af13f4760873de07aeacdc174" Versions="5" NamePath="Main.CleaningTank1.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FFF2F2F2" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="f50c260fb61241f283b1cb837b75a520" Versions="5" NamePath="Main.CleaningTank1.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIRectangle.Animations>
+				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L21" />
+			</HMIRectangle.Animations>
+		</HMIRectangle>
+		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="c5cd94c5691341ed88423e25eca1c63a" Versions="5" NamePath="Main.CleaningTank1.Text0" IsShow="True" Width="30" Height="32" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMILine X1="143" Y1="97" X2="157" Y2="97" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="2e1bec6e6b7e4265b1921f895a3b03d0" Versions="5" NamePath="Main.CleaningTank1.Line2" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="96.875" RotateAngle="0" />
+		<HMILine X1="143" Y1="140" X2="157" Y2="140" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="8d6d65a7c74a487eb2daba7150143947" Versions="5" NamePath="Main.CleaningTank1.Line3" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="139.625" RotateAngle="0" />
+		<HMILine X1="143" Y1="180" X2="157" Y2="180" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="8703f6f9ecb14ec28834195842de456b" Versions="5" NamePath="Main.CleaningTank1.Line4" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="180.125" RotateAngle="0" />
+		<HMILine X1="143" Y1="218" X2="157" Y2="218" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="c90eca1c000a4355bc89593a2f1da3f9" Versions="5" NamePath="Main.CleaningTank1.Line5" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="218.375" RotateAngle="0" />
+		<HMILine X1="143" Y1="257" X2="157" Y2="257" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5421ed9526d34de9824841ed08e9ffb4" Versions="5" NamePath="Main.CleaningTank1.Line6" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="256.625" RotateAngle="0" />
+		<HMILine X1="143" Y1="297" X2="157" Y2="297" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="31efbbfae15f419eb3899bc3ce742e2c" Versions="5" NamePath="Main.CleaningTank1.Line7" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="297.125" RotateAngle="0" />
+		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="88a77df54da24a1393d2ad7571792c85" Versions="5" NamePath="Main.CleaningTank1.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="a2ecacca6edd46f18a7685e5e8167ea7" Versions="5" NamePath="Main.CleaningTank1.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="91549d64b0674a26ac47db5606763e63" Versions="5" NamePath="Main.CleaningTank1.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Fill="#FFBFBFBF" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="39339bc3f9824eebb6c109a5ba023849" Versions="5" NamePath="Main.CleaningTank1.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+	</HMIGroup>
+	<HMIGroup ZIndex="70" Id="74493b61cb3848ecaeaf03ff3d4c9e43" Versions="5" NamePath="Main.CleaningTank2" Fill="{x:Null}" Width="209" Height="324" Left="1057" Top="348">
+		<HMIGroup.Actions>
+			<HMIEvent Script="Var.Temp.WaterSelect = 3&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 3" />
+		</HMIGroup.Actions>
+		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="2e9067cbd59b4d86be73760aa0981bbc" Versions="5" NamePath="Main.CleaningTank2.Ellipse2" IsShow="True" Width="194.55299539170508" Height="29.25" Left="6.5184331797235018" Top="294.875" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="305d7dce9f5644c184523ad7cecd4185" Versions="5" NamePath="Main.CleaningTank2.Rectangle28" IsShow="True" Width="194.55299539170508" Height="279" Left="6.5184331797235018" Top="31.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FFF2F2F2" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="cf5869df31ba45d598568dca58104daf" Versions="5" NamePath="Main.CleaningTank2.LiquidLevel" IsShow="True" Width="81.866359447004612" Height="207" Left="59.647465437788028" Top="94.5" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIRectangle.Animations>
+				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L31" />
+			</HMIRectangle.Animations>
+		</HMIRectangle>
+		<HMIText Text="1" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="3" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="31fe4d4ef47d4f33943c3782d6879eca" Versions="5" NamePath="Main.CleaningTank2.Text0" IsShow="True" Width="30" Height="32" Left="163.73271889400922" Top="85.5" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="1" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMILine X1="143" Y1="97" X2="157" Y2="97" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="23597f608bac42d382cd4be1a48c5106" Versions="5" NamePath="Main.CleaningTank2.Line2" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="96.875" RotateAngle="0" />
+		<HMILine X1="143" Y1="140" X2="157" Y2="140" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="46165699a0b94a0dba89354a6dcdb684" Versions="5" NamePath="Main.CleaningTank2.Line3" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="139.625" RotateAngle="0" />
+		<HMILine X1="143" Y1="180" X2="157" Y2="180" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="969467ecffad4e9d93e65a3dbb340fff" Versions="5" NamePath="Main.CleaningTank2.Line4" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="180.125" RotateAngle="0" />
+		<HMILine X1="143" Y1="218" X2="157" Y2="218" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5c549ad103d5447586faba12ba38ff8f" Versions="5" NamePath="Main.CleaningTank2.Line5" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="218.375" RotateAngle="0" />
+		<HMILine X1="143" Y1="257" X2="157" Y2="257" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="98f391ce3cce4bc2a526011dc3a30016" Versions="5" NamePath="Main.CleaningTank2.Line6" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="256.625" RotateAngle="0" />
+		<HMILine X1="143" Y1="297" X2="157" Y2="297" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="e943e48e456a4355bf6c6dfcd8aa9e86" Versions="5" NamePath="Main.CleaningTank2.Line7" IsShow="True" Width="14.447004608294932" Height="2.25" Left="142.7672811059908" Top="297.125" RotateAngle="0" />
+		<HMIText Text="0" TextWrapping="Wrap" ForeColor="#FFFFFFFF" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="True" ZIndex="10" IsImage="False" FillImage="" Fill="#FFD8D8D8" Opacity="1" Stroke="#FF000000" Id="ab8b774dac71439c88dbe8293802edbb" Versions="5" NamePath="Main.CleaningTank2.Text1" IsShow="True" Width="29.857142857142858" Height="31.5" Left="161.80645161290323" Top="281.25" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999978" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="0" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="40a4c1b077d643228c4de2bebc159646" Versions="5" NamePath="Main.CleaningTank2.Ellipse3" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="33.727500000000006" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="66c355eb87cd45b8b62efacfef36cf75" Versions="5" NamePath="Main.CleaningTank2.Rectangle30" IsShow="True" Width="209" Height="33.75" Left="0" Top="15.620000000000003" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Fill="#FFBFBFBF" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="009c69c17b654dd396ba8a900c515610" Versions="5" NamePath="Main.CleaningTank2.Ellipse4" IsShow="True" Width="206.110599078341" Height="29.25" Left="1.0184331797235018" Top="0.27250000000000085" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+	</HMIGroup>
+	<HMIGroup ZIndex="71" Id="a0663bd7a942495fa6a22bc633a82fe5" Versions="5" NamePath="Main.CleaningTank4" Fill="{x:Null}" Width="734" Height="169" Left="529" Top="911">
+		<HMIGroup.Actions>
+			<HMIEvent Script="Var.Temp.WaterSelect = 1&#xA;HMICmd.OpenDialogWindow(&quot;Chart&quot;)" EventName="MouseLeftButtonDown" Expression="Var.Temp.WaterSelect = 1" />
+		</HMIGroup.Actions>
+		<HMIEllipse ZIndex="0" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="d72fcbda04614c63bb26d76ced192f78" Versions="5" NamePath="Main.CleaningTank4.Ellipse2" IsShow="True" Width="685.14241486068113" Height="15.363636363636363" Left="25.068111455108351" Top="153.81818181818181" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="7f55db4e0b7c494ea58a959994f7265d" Versions="5" NamePath="Main.CleaningTank4.Rectangle28" IsShow="True" Width="685.14241486068113" Height="145.55023923444975" Left="25.068111455108351" Top="16.755980861244012" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="2" IsImage="False" FillImage="" Fill="#FFF2F2F2" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="2dd209f46dfa412ebab4f7b47d451b19" Versions="5" NamePath="Main.CleaningTank4.LiquidLevel" IsShow="True" Width="287.46439628482972" Height="108.35406698564593" Left="211.56965944272446" Top="48.693779904306226" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIRectangle.Animations>
+				<HMIVerticalFillPercentAnimation VerticalFillDirection="BottomToTop" MinExpressionValue="0" MaxExpressionValue="1" MinPropertyValue="0" MaxPropertyValue="100" ScanTime="100" Expression="Var.L11" />
+			</HMIRectangle.Animations>
+		</HMIRectangle>
+		<HMIText Text="" TextWrapping="Wrap" ForeColor="#FFA5A5A5" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="3" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="60a51d6955184a88b13d4ac02dbd223e" Versions="5" NamePath="Main.CleaningTank4.Text0" IsShow="True" Width="105.6687306501548" Height="16.980861244019138" Left="576.06501547987614" Top="44.473684210526315" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMILine X1="502" Y1="51" X2="551" Y2="51" ScaleX="1" ScaleY="1" ZIndex="4" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="bce5765a9208492bb9c2667853e67e9e" Versions="5" NamePath="Main.CleaningTank4.Line2" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="50.846889952153113" RotateAngle="0" />
+		<HMILine X1="502" Y1="73" X2="551" Y2="73" ScaleX="1" ScaleY="1" ZIndex="5" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="d0e1ad8ae2f0402387e6253badae368c" Versions="5" NamePath="Main.CleaningTank4.Line3" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="72.679425837320579" RotateAngle="0" />
+		<HMILine X1="502" Y1="94" X2="551" Y2="94" ScaleX="1" ScaleY="1" ZIndex="6" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5750bf38b93a4c149bbab587e250d84c" Versions="5" NamePath="Main.CleaningTank4.Line4" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="93.703349282296656" RotateAngle="0" />
+		<HMILine X1="502" Y1="114" X2="551" Y2="114" ScaleX="1" ScaleY="1" ZIndex="7" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="3690dd41f90f458b826a55df34e111cd" Versions="5" NamePath="Main.CleaningTank4.Line5" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="113.91866028708134" RotateAngle="0" />
+		<HMILine X1="502" Y1="134" X2="551" Y2="134" ScaleX="1" ScaleY="1" ZIndex="8" Stroke="#FFFFFFFF" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="5f1dd3aca81749dc9d22a273ca9f9eb4" Versions="5" NamePath="Main.CleaningTank4.Line6" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="134.13397129186603" RotateAngle="0" />
+		<HMILine X1="502" Y1="155" X2="551" Y2="155" ScaleX="1" ScaleY="1" ZIndex="9" Stroke="#FFFFFFFF" StrokeThickness="2" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" Id="4793c7a23b484301a1ee114f668788d6" Versions="5" NamePath="Main.CleaningTank4.Line7" IsShow="True" Width="48.857585139318886" Height="0.80861244019138756" Left="502.13931888544892" Top="155.15789473684211" RotateAngle="0" />
+		<HMIText Text="" TextWrapping="Wrap" ForeColor="#FFA5A5A5" FontSize="16" FontWeight="Bold" FontFamily="Times New Roman" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="10" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="6640ba2cefc145efb3d74b58d010be0c" Versions="5" NamePath="Main.CleaningTank4.Text1" IsShow="True" Width="105.6687306501548" Height="16.980861244019138" Left="569.24767801857581" Top="146.35885167464116" TransformOrigin="0,0" RotateAngle="0" ScaleX="0.99999999999999989" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+			<HMIText.DevTextInfo>
+				<HMITextInfo Text="" IsHeritFontFamily="False" IsHeritFontSize="False" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+			</HMIText.DevTextInfo>
+			<HMIText.DevFontStyle>
+				<HMIFont TextFontFamily="Times New Roman" TextFontSize="16" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+			</HMIText.DevFontStyle>
+		</HMIText>
+		<HMIEllipse ZIndex="11" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="b9a2660ac0044df9b1771ff9d5c0d799" Versions="5" NamePath="Main.CleaningTank4.Ellipse3" IsShow="True" Width="723.77399380804957" Height="15.363636363636363" Left="3.2956656346749469" Top="17.756746411483256" TransformOrigin="0.5,-0.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIRectangle ZIndex="12" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#00000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="5bc1af52f8bf44b59dfea5de4e1919b6" Versions="5" NamePath="Main.CleaningTank4.Rectangle30" IsShow="True" Width="734" Height="17.789473684210527" Left="0" Top="7.9766507177033485" TransformOrigin="0.5,0.52" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+		<HMIEllipse ZIndex="13" IsImage="False" FillImage="" Fill="#FFBFBFBF" Opacity="1" Stroke="#FF000000" StrokeThickness="1" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeDashOffset="0" StrokeDashArray="" ProportionX="1" ProportionY="1" HorizontalPartialFillDirection="LeftToRight" VerticalPartialFillDirection="TopToBottom" Id="d48145a53bc7440f88d3c4977515fea9" Versions="5" NamePath="Main.CleaningTank4.Ellipse4" IsShow="True" Width="723.77399380804957" Height="15.363636363636363" Left="3.2956656346749469" Top="0.39636363636363559" TransformOrigin="0.5,1.09" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0" />
+	</HMIGroup>
 </HMIWindow>

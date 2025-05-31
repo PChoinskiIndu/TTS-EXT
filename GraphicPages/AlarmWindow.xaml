@@ -5,7 +5,7 @@
 	<HMIWindow.ChildScript>
 		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="Var.Service.ScreenName = &quot;Alarm&quot;" InteverTime="1000" Description="" IsEnabled="True" />
 	</HMIWindow.ChildScript>
-	<HMIAdvancedAlarmWindow ControlBorderBrush="#FFDCDCDC" StartTab="Realtime" FontFamily="Microsoft YaHei UI" FontSize="12" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" RelFontFamily="Microsoft YaHei UI" RelFontSize="12" RelFontWeight="Normal" RelFontStyle="Normal" RelFontStretch="Normal" IsBackgroundImage="False" BackgroundImage="" Background="#FFBFBFBF" ZIndex="0" Id="48a7833629ee4516a0e13bdad28a376c" Versions="5" NamePath="AlarmWindow.AlarmWindow0" Fill="{x:Null}" Width="1260" Height="795" Left="50" Top="64" ExtendedKeyValues="&lt;GroupAlarmConfigs Value=&quot;&quot;&gt;&lt;/GroupAlarmConfigs&gt;">
+	<HMIAdvancedAlarmWindow ControlBorderBrush="#FFDCDCDC" StartTab="Realtime" FontFamily="Microsoft YaHei UI" FontSize="12" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" RelFontFamily="Microsoft YaHei UI" RelFontSize="12" RelFontWeight="Normal" RelFontStyle="Normal" RelFontStretch="Normal" IsBackgroundImage="False" BackgroundImage="" Background="#FFBFBFBF" ZIndex="0" Id="48a7833629ee4516a0e13bdad28a376c" Versions="5" NamePath="AlarmWindow.AlarmWindow0" Fill="{x:Null}" Width="1588" Height="857" Left="50" Top="64" ExtendedKeyValues="&lt;GroupAlarmConfigs Value=&quot;&quot;&gt;&lt;/GroupAlarmConfigs&gt;">
 		<HMIAdvancedAlarmWindow.HistoryDataGridStyle>
 			<HMIDataGridStyle HeadFontColor="#FF000000" HoverRowFontColor="#FFFFFFFF" HoverRowBackgroundColor="#FF87CEEB" SelectedRowFontColor="#FFFFFFFF" SelectedRowBackgroundColor="#FF87CEFA" GridBorderColor="#FFDCDCDC" GridBorderThickness="1" GridInnerBorderColor="#FFDCDCDC" GridInnerBordertThickness="1" IsShowVerticalLine="True" IsShowHorizontalLine="True">
 				<HMIDataGridStyle.HeadFontStyle>
@@ -81,4 +81,20 @@
 			<Filter FilterName="DoubleLowAlarm,LowAlarm,OnAlarm,OffAlarm,OnOrOffAlarm,ExpressionAlarm,HighAlarm,DoubleHighAlarm,UpperDeviationAlarm,LowerDeviationAlarm,RateOfChangeAlarm,Light,Lighter,Common,Heavier,Serious,Ack,Recovery,Alarm" />
 		</HMIAdvancedAlarmWindow.RelAlarmFilter>
 	</HMIAdvancedAlarmWindow>
+	<HMIRectangle ZIndex="1" IsImage="False" FillImage="" Fill="#FFA5A5A5" Opacity="1" Stroke="#FF000000" Id="8a5c45a733e94802adfb08289edad2fb" Versions="5" NamePath="AlarmWindow.Rectangle0" Width="199" Height="112" Left="1436" Top="936">
+		<HMIRectangle.Actions>
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;Main&quot;)&#xA;HMICmd.CloseWindow(&quot;AlarmWindow&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;Main&quot;)" />
+		</HMIRectangle.Actions>
+	</HMIRectangle>
+	<HMIText Text="Exit" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="2" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="fa8315ceaaf7491eb1a98840bcef702c" Versions="5" NamePath="AlarmWindow.Text0" Width="47" Height="30" Left="1512" Top="977" RotateAngle="0" ScaleX="1" ScaleY="1" SkewAngleX="0" SkewAngleY="0" TranslationX="0" TranslationY="0">
+		<HMIText.DevTextInfo>
+			<HMITextInfo Text="Exit" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
+		</HMIText.DevTextInfo>
+		<HMIText.DevFontStyle>
+			<HMIFont IsBold="True" IsItalic="False" TextFontFamily="Segoe UI" TextFontSize="22" TextFontStyle="Normal" TextFontWeight="Bold" IsShowItalic="True" />
+		</HMIText.DevFontStyle>
+		<HMIText.Actions>
+			<HMIEvent Script="HMICmd.OpenWindow(&quot;Main&quot;)&#xA;HMICmd.CloseWindow(&quot;AlarmWindow&quot;)" EventName="MouseLeftButtonDown" Expression="HMICmd.OpenWindow(&quot;Main&quot;)" />
+		</HMIText.Actions>
+	</HMIText>
 </HMIWindow>

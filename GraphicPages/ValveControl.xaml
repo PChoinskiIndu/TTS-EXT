@@ -5,7 +5,7 @@
 	<HMIWindow.ChildScript>
 		<HMIWindowScript FunName="Program" Name="TimerTicked" ScriptContent="SELECT Case Var.Temp.ValveSelect&#xA;&#x9;CASE 1&#xA;&#x9;&#x9;Var.CVG1man = Var.Temp.ValveValue&#xA;&#x9;&#x9;Var.Temp.ValveName = &quot;CV1 Set Value&quot;&#xA;&#x9;CASE 2&#xA;&#x9;&#x9;Var.CVG2man = Var.Temp.ValveValue&#xA;&#x9;&#x9;Var.Temp.ValveName = &quot;CV2 Set Value&quot;&#xA;&#x9;CASE 3&#xA;&#x9;&#x9;Var.CVG1man = Var.Temp.ValveValue&#xA;&#x9;&#x9;Var.Temp.ValveName = &quot;CV3 Set Value&quot;&#xA;END Select" InteverTime="1000" Description="" IsEnabled="True" />
 	</HMIWindow.ChildScript>
-	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="ece3f152990f4451a2d3cbea2b72edb0" Versions="5" NamePath="ValveControl.Rectangle0" Width="107" Height="37" Left="130" Top="356" />
+	<HMIRectangle ZIndex="0" IsImage="False" FillImage="" Fill="#FFFFFAF0" Opacity="1" Stroke="#FF000000" Id="ece3f152990f4451a2d3cbea2b72edb0" Versions="5" NamePath="ValveControl.Rectangle0" Width="107" Height="37" Left="142" Top="355" />
 	<HMICircleGauge IsShowToolBar="False" IsShowBtnStop="True" IsShowBtnSave="True" IsShowBtnPrint="True" CircleVarExpValue="Var.Temp.ValveValue" PointerValue="70" UnitText="%" Text="" FontFamily="Times New Roman" FontSize="20" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Foreground="#FF000000" IsBackgroundImage="False" BackgroundImage="" Background="#FFBFBFBF" ZIndex="1" Id="c7c5a4f9adce40cf96663087f6f7a6c0" Versions="5" NamePath="ValveControl.CircleGauge0" Fill="{x:Null}" Width="361" Height="285" Left="15" Top="69">
 		<HMICircleGauge.Scale>
 			<HMICircularGaugeScale UnitTexts="%" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold" FontStyle="Normal" FontStretch="Normal" Labelstroke="#FF000000" RimStroke="#FFDBDBDB" RimStrokeWidth="20" TickStroke="#FF000000" ScaleInterval="10" SmallTickStroke="#FFC0C0C0" ScaleMinorTicksPerInterval="10" ScaleEndValue="100" ScaleStartValue="0" StartAngle="160" SweepAngle="220" ValuePosition="Outside" PointPointerPosition="Outside" />
@@ -20,7 +20,7 @@
 			<HMIFont TextFontFamily="Times New Roman" TextFontSize="20" TextFontStretch="Normal" TextFontStyle="Normal" TextFontWeight="Normal" IsShowItalic="True" />
 		</HMICircleGauge.DevFontStyle>
 	</HMICircleGauge>
-	<HMIPlusAndMinusValueButton FunctionButtonType="PlusValueButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="{x:Null}" Content="+" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Default" AccountCheck="None" ZIndex="2" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="c1e16a1f9ced4149907ab3c486cad68e" Versions="5" NamePath="ValveControl.IncrementButton0" Fill="{x:Null}" Width="55" Height="38" Left="72" Top="356">
+	<HMIPlusAndMinusValueButton FunctionButtonType="PlusValueButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="{x:Null}" Content="+" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Default" AccountCheck="None" ZIndex="2" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="c1e16a1f9ced4149907ab3c486cad68e" Versions="5" NamePath="ValveControl.IncrementButton0" Fill="{x:Null}" Width="55" Height="38" Left="249" Top="355">
 		<HMIPlusAndMinusValueButton.StateInfoModel>
 			<StateInfoModel>
 				<StateInfoModel.StateInfoCollection>
@@ -57,7 +57,7 @@
 			<HMIPlusValueQuickAction PlusNum="1" UpperLimit="100" IsFollowVariable="True" Script="{x:Null}" Expression="Var.Temp.ValveValue" />
 		</HMIPlusAndMinusValueButton.Actions>
 	</HMIPlusAndMinusValueButton>
-	<HMIPlusAndMinusValueButton FunctionButtonType="MinusValueButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="{x:Null}" Content="-" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Classic" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="3" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="3d066d53d1a040a5b98bec4bc3e3d500" Versions="5" NamePath="ValveControl.DecrementButton0" Fill="{x:Null}" Width="55" Height="38" Left="242" Top="356">
+	<HMIPlusAndMinusValueButton FunctionButtonType="MinusValueButton" LongPressTime="0" IsShowProgress="False" IsOperationRecord="False" RecordText="{x:Null}" Content="-" ContentHoriAlignment="Center" ContentVertAlignment="Center" IsTriggerOpen="False" ButtonStyle="Classic" StateInfoModel="{x:Null}" AccountCheck="None" ZIndex="3" IsBackgroundImage="False" BackgroundImage="" FontFamily="Segoe UI" FontSize="12" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Focusable="False" Id="3d066d53d1a040a5b98bec4bc3e3d500" Versions="5" NamePath="ValveControl.DecrementButton0" Fill="{x:Null}" Width="55" Height="38" Left="87" Top="355">
 		<HMIPlusAndMinusValueButton.DevTextInfo>
 			<HMITextInfo Text="-" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIPlusAndMinusValueButton.DevTextInfo>
@@ -83,7 +83,7 @@
 			<HMIMinusValueQuickAction MinusNum="1" LowLimit="0" IsFollowVariable="True" Script="{x:Null}" Expression="Var.Temp.ValveValue" />
 		</HMIPlusAndMinusValueButton.Actions>
 	</HMIPlusAndMinusValueButton>
-	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="65cca31196de45b997c40ca8458becc2" Versions="5" NamePath="ValveControl.Text0" Width="56" Height="27" Left="148" Top="361">
+	<HMIText Text="###" TextWrapping="Wrap" ForeColor="#FF000000" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI" FontStretch="Normal" FontStyle="Normal" IsStretch="False" ZIndex="4" IsImage="False" FillImage="" Fill="#00FFFFFF" Opacity="1" Stroke="#FF000000" Id="65cca31196de45b997c40ca8458becc2" Versions="5" NamePath="ValveControl.Text0" Width="47" Height="27" Left="173" Top="360">
 		<HMIText.DevTextInfo>
 			<HMITextInfo Text="###" IsHeritFontFamily="True" IsHeritFontSize="True" IsHeritFontWeight="False" IsHeritFontItalic="False" />
 		</HMIText.DevTextInfo>
